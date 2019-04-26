@@ -1,0 +1,83 @@
+<!-- Use this file to deploy some handlers/chains and services      -->
+<!-- Two ways to do this:                                           -->
+<!--   java org.apache.axis.client.AdminClient deploy.wsdd          -->
+<!--      after the axis server is running                          -->
+<!-- or                                                             -->
+<!--   java org.apache.axis.utils.Admin client|server deploy.wsdd   -->
+<!--      from the same directory that the Axis engine runs         -->
+
+<deployment
+    xmlns="http://xml.apache.org/axis/wsdd/"
+    xmlns:java="http://xml.apache.org/axis/wsdd/providers/java">
+
+  <!-- Services from ReactionServiceService WSDL service -->
+
+  <service name="ReactionService" provider="java:RPC" style="wrapped" use="literal">
+      <parameter name="wsdlTargetNamespace" value="http://reactionservice.esblurock.info"/>
+      <parameter name="wsdlServiceElement" value="ReactionServiceService"/>
+      <parameter name="schemaQualified" value="http://reactionservice.esblurock.info"/>
+      <parameter name="wsdlServicePort" value="ReactionService"/>
+      <parameter name="className" value="info.esblurock.reactionservice.ReactionServiceSoapBindingImpl"/>
+      <parameter name="wsdlPortType" value="ReactionService"/>
+      <parameter name="typeMappingVersion" value="1.2"/>
+      <operation name="getFiles" qname="operNS:getFiles" xmlns:operNS="http://reactionservice.esblurock.info" returnQName="retNS:getFilesReturn" xmlns:retNS="http://reactionservice.esblurock.info" returnType="rtns:string" xmlns:rtns="http://www.w3.org/2001/XMLSchema" soapAction="" >
+        <parameter qname="pns:filenames" xmlns:pns="http://reactionservice.esblurock.info" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+      </operation>
+      <operation name="putFiles" qname="operNS:putFiles" xmlns:operNS="http://reactionservice.esblurock.info" returnQName="retNS:putFilesReturn" xmlns:retNS="http://reactionservice.esblurock.info" returnType="rtns:string" xmlns:rtns="http://www.w3.org/2001/XMLSchema" soapAction="" >
+        <parameter qname="pns:cml" xmlns:pns="http://reactionservice.esblurock.info" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+      </operation>
+      <operation name="listDir" qname="operNS:listDir" xmlns:operNS="http://reactionservice.esblurock.info" returnQName="retNS:listDirReturn" xmlns:retNS="http://reactionservice.esblurock.info" returnType="rtns:string" xmlns:rtns="http://www.w3.org/2001/XMLSchema" soapAction="" >
+        <parameter qname="pns:dir" xmlns:pns="http://reactionservice.esblurock.info" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+        <parameter qname="pns:filter" xmlns:pns="http://reactionservice.esblurock.info" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+        <parameter qname="pns:showFiles" xmlns:pns="http://reactionservice.esblurock.info" type="tns:boolean" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+      </operation>
+      <operation name="listMolecules" qname="operNS:listMolecules" xmlns:operNS="http://reactionservice.esblurock.info" returnQName="retNS:listMoleculesReturn" xmlns:retNS="http://reactionservice.esblurock.info" returnType="rtns:string" xmlns:rtns="http://www.w3.org/2001/XMLSchema" soapAction="" >
+      </operation>
+      <operation name="listSubstructures" qname="operNS:listSubstructures" xmlns:operNS="http://reactionservice.esblurock.info" returnQName="retNS:listSubstructuresReturn" xmlns:retNS="http://reactionservice.esblurock.info" returnType="rtns:string" xmlns:rtns="http://www.w3.org/2001/XMLSchema" soapAction="" >
+      </operation>
+      <operation name="listReactionObject" qname="operNS:listReactionObject" xmlns:operNS="http://reactionservice.esblurock.info" returnQName="retNS:listReactionObjectReturn" xmlns:retNS="http://reactionservice.esblurock.info" returnType="rtns:string" xmlns:rtns="http://www.w3.org/2001/XMLSchema" soapAction="" >
+        <parameter qname="pns:cmd" xmlns:pns="http://reactionservice.esblurock.info" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+      </operation>
+      <operation name="listRxnPatterns" qname="operNS:listRxnPatterns" xmlns:operNS="http://reactionservice.esblurock.info" returnQName="retNS:listRxnPatternsReturn" xmlns:retNS="http://reactionservice.esblurock.info" returnType="rtns:string" xmlns:rtns="http://www.w3.org/2001/XMLSchema" soapAction="" >
+      </operation>
+      <operation name="listMechanisms" qname="operNS:listMechanisms" xmlns:operNS="http://reactionservice.esblurock.info" returnQName="retNS:listMechanismsReturn" xmlns:retNS="http://reactionservice.esblurock.info" returnType="rtns:string" xmlns:rtns="http://www.w3.org/2001/XMLSchema" soapAction="" >
+      </operation>
+      <operation name="listSubmechanismFiles" qname="operNS:listSubmechanismFiles" xmlns:operNS="http://reactionservice.esblurock.info" returnQName="retNS:listSubmechanismFilesReturn" xmlns:retNS="http://reactionservice.esblurock.info" returnType="rtns:string" xmlns:rtns="http://www.w3.org/2001/XMLSchema" soapAction="" >
+      </operation>
+      <operation name="printSubstructure" qname="operNS:printSubstructure" xmlns:operNS="http://reactionservice.esblurock.info" returnQName="retNS:printSubstructureReturn" xmlns:retNS="http://reactionservice.esblurock.info" returnType="rtns:string" xmlns:rtns="http://www.w3.org/2001/XMLSchema" soapAction="" >
+        <parameter qname="pns:reference" xmlns:pns="http://reactionservice.esblurock.info" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+      </operation>
+      <operation name="printSubmechanism" qname="operNS:printSubmechanism" xmlns:operNS="http://reactionservice.esblurock.info" returnQName="retNS:printSubmechanismReturn" xmlns:retNS="http://reactionservice.esblurock.info" returnType="rtns:string" xmlns:rtns="http://www.w3.org/2001/XMLSchema" soapAction="" >
+        <parameter qname="pns:pathDir" xmlns:pns="http://reactionservice.esblurock.info" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+      </operation>
+      <operation name="combineMechanisms" qname="operNS:combineMechanisms" xmlns:operNS="http://reactionservice.esblurock.info" returnQName="retNS:combineMechanismsReturn" xmlns:retNS="http://reactionservice.esblurock.info" returnType="rtns:string" xmlns:rtns="http://www.w3.org/2001/XMLSchema" soapAction="" >
+        <parameter qname="pns:root" xmlns:pns="http://reactionservice.esblurock.info" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+        <parameter qname="pns:name" xmlns:pns="http://reactionservice.esblurock.info" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+        <parameter qname="pns:mechanisms" xmlns:pns="http://reactionservice.esblurock.info" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+      </operation>
+      <operation name="alternativeNames" qname="operNS:alternativeNames" xmlns:operNS="http://reactionservice.esblurock.info" returnQName="retNS:alternativeNamesReturn" xmlns:retNS="http://reactionservice.esblurock.info" returnType="rtns:string" xmlns:rtns="http://www.w3.org/2001/XMLSchema" soapAction="" >
+        <parameter qname="pns:altname" xmlns:pns="http://reactionservice.esblurock.info" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+        <parameter qname="pns:rootMols" xmlns:pns="http://reactionservice.esblurock.info" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+        <parameter qname="pns:rootCorrs" xmlns:pns="http://reactionservice.esblurock.info" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+      </operation>
+      <operation name="printDBMechanism" qname="operNS:printDBMechanism" xmlns:operNS="http://reactionservice.esblurock.info" returnQName="retNS:printDBMechanismReturn" xmlns:retNS="http://reactionservice.esblurock.info" returnType="rtns:string" xmlns:rtns="http://www.w3.org/2001/XMLSchema" soapAction="" >
+        <parameter qname="pns:name" xmlns:pns="http://reactionservice.esblurock.info" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+      </operation>
+      <operation name="createSubmechanism" qname="operNS:createSubmechanism" xmlns:operNS="http://reactionservice.esblurock.info" returnQName="retNS:createSubmechanismReturn" xmlns:retNS="http://reactionservice.esblurock.info" returnType="rtns:string" xmlns:rtns="http://www.w3.org/2001/XMLSchema" soapAction="" >
+        <parameter qname="pns:mechanismName" xmlns:pns="http://reactionservice.esblurock.info" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+        <parameter qname="pns:molecules" xmlns:pns="http://reactionservice.esblurock.info" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+        <parameter qname="pns:outputRoot" xmlns:pns="http://reactionservice.esblurock.info" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+      </operation>
+      <operation name="printMechanism" qname="operNS:printMechanism" xmlns:operNS="http://reactionservice.esblurock.info" returnQName="retNS:printMechanismReturn" xmlns:retNS="http://reactionservice.esblurock.info" returnType="rtns:string" xmlns:rtns="http://www.w3.org/2001/XMLSchema" soapAction="" >
+        <parameter qname="pns:pathConcat" xmlns:pns="http://reactionservice.esblurock.info" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+      </operation>
+      <operation name="printRxnPattern" qname="operNS:printRxnPattern" xmlns:operNS="http://reactionservice.esblurock.info" returnQName="retNS:printRxnPatternReturn" xmlns:retNS="http://reactionservice.esblurock.info" returnType="rtns:string" xmlns:rtns="http://www.w3.org/2001/XMLSchema" soapAction="" >
+        <parameter qname="pns:reference" xmlns:pns="http://reactionservice.esblurock.info" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+      </operation>
+      <operation name="printMolecule" qname="operNS:printMolecule" xmlns:operNS="http://reactionservice.esblurock.info" returnQName="retNS:printMoleculeReturn" xmlns:retNS="http://reactionservice.esblurock.info" returnType="rtns:string" xmlns:rtns="http://www.w3.org/2001/XMLSchema" soapAction="" >
+        <parameter qname="pns:reference" xmlns:pns="http://reactionservice.esblurock.info" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+      </operation>
+      <parameter name="allowedMethods" value="printDBMechanism createSubmechanism printSubstructure listMolecules listSubstructures getFiles listMechanisms printMechanism combineMechanisms alternativeNames putFiles listReactionObject listSubmechanismFiles listRxnPatterns printRxnPattern listDir printSubmechanism printMolecule"/>
+
+  </service>
+</deployment>

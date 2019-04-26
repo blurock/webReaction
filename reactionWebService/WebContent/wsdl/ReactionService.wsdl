@@ -1,0 +1,1098 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions targetNamespace="http://reactionservice.esblurock.info" xmlns:apachesoap="http://xml.apache.org/xml-soap" xmlns:impl="http://reactionservice.esblurock.info" xmlns:intf="http://reactionservice.esblurock.info" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:wsdlsoap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<!--WSDL created by Apache Axis version: 1.4
+Built on Apr 22, 2006 (06:55:48 PDT)-->
+ <wsdl:types>
+  <schema elementFormDefault="qualified" targetNamespace="http://reactionservice.esblurock.info" xmlns="http://www.w3.org/2001/XMLSchema">
+   <element name="getFiles">
+    <complexType>
+     <sequence>
+      <element name="filenames" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="getFilesResponse">
+    <complexType>
+     <sequence>
+      <element name="getFilesReturn" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="putFiles">
+    <complexType>
+     <sequence>
+      <element name="cml" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="putFilesResponse">
+    <complexType>
+     <sequence>
+      <element name="putFilesReturn" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="listDir">
+    <complexType>
+     <sequence>
+      <element name="dir" type="xsd:string"/>
+      <element name="filter" type="xsd:string"/>
+      <element name="showFiles" type="xsd:boolean"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="listDirResponse">
+    <complexType>
+     <sequence>
+      <element name="listDirReturn" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="listMolecules">
+    <complexType/>
+   </element>
+   <element name="listMoleculesResponse">
+    <complexType>
+     <sequence>
+      <element name="listMoleculesReturn" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="listSubstructures">
+    <complexType/>
+   </element>
+   <element name="listSubstructuresResponse">
+    <complexType>
+     <sequence>
+      <element name="listSubstructuresReturn" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="listReactionObject">
+    <complexType>
+     <sequence>
+      <element name="cmd" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="listReactionObjectResponse">
+    <complexType>
+     <sequence>
+      <element name="listReactionObjectReturn" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="listRxnPatterns">
+    <complexType/>
+   </element>
+   <element name="listRxnPatternsResponse">
+    <complexType>
+     <sequence>
+      <element name="listRxnPatternsReturn" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="listMechanisms">
+    <complexType/>
+   </element>
+   <element name="listMechanismsResponse">
+    <complexType>
+     <sequence>
+      <element name="listMechanismsReturn" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="listSubmechanismFiles">
+    <complexType/>
+   </element>
+   <element name="listSubmechanismFilesResponse">
+    <complexType>
+     <sequence>
+      <element name="listSubmechanismFilesReturn" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="printSubstructure">
+    <complexType>
+     <sequence>
+      <element name="reference" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="printSubstructureResponse">
+    <complexType>
+     <sequence>
+      <element name="printSubstructureReturn" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="printSubmechanism">
+    <complexType>
+     <sequence>
+      <element name="pathDir" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="printSubmechanismResponse">
+    <complexType>
+     <sequence>
+      <element name="printSubmechanismReturn" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="combineMechanisms">
+    <complexType>
+     <sequence>
+      <element name="root" type="xsd:string"/>
+      <element name="name" type="xsd:string"/>
+      <element name="mechanisms" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="combineMechanismsResponse">
+    <complexType>
+     <sequence>
+      <element name="combineMechanismsReturn" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="alternativeNames">
+    <complexType>
+     <sequence>
+      <element name="altname" type="xsd:string"/>
+      <element name="rootMols" type="xsd:string"/>
+      <element name="rootCorrs" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="alternativeNamesResponse">
+    <complexType>
+     <sequence>
+      <element name="alternativeNamesReturn" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="printDBMechanism">
+    <complexType>
+     <sequence>
+      <element name="name" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="printDBMechanismResponse">
+    <complexType>
+     <sequence>
+      <element name="printDBMechanismReturn" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="createSubmechanism">
+    <complexType>
+     <sequence>
+      <element name="mechanismName" type="xsd:string"/>
+      <element name="molecules" type="xsd:string"/>
+      <element name="outputRoot" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="createSubmechanismResponse">
+    <complexType>
+     <sequence>
+      <element name="createSubmechanismReturn" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="printMechanism">
+    <complexType>
+     <sequence>
+      <element name="pathConcat" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="printMechanismResponse">
+    <complexType>
+     <sequence>
+      <element name="printMechanismReturn" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="printRxnPattern">
+    <complexType>
+     <sequence>
+      <element name="reference" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="printRxnPatternResponse">
+    <complexType>
+     <sequence>
+      <element name="printRxnPatternReturn" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="printMolecule">
+    <complexType>
+     <sequence>
+      <element name="reference" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="printMoleculeResponse">
+    <complexType>
+     <sequence>
+      <element name="printMoleculeReturn" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+  </schema>
+ </wsdl:types>
+
+   <wsdl:message name="putFilesResponse">
+
+      <wsdl:part element="impl:putFilesResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="listMoleculesResponse">
+
+      <wsdl:part element="impl:listMoleculesResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="putFilesRequest">
+
+      <wsdl:part element="impl:putFiles" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="listMechanismsRequest">
+
+      <wsdl:part element="impl:listMechanisms" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="printRxnPatternRequest">
+
+      <wsdl:part element="impl:printRxnPattern" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="listSubmechanismFilesResponse">
+
+      <wsdl:part element="impl:listSubmechanismFilesResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="printRxnPatternResponse">
+
+      <wsdl:part element="impl:printRxnPatternResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="getFilesResponse">
+
+      <wsdl:part element="impl:getFilesResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="printDBMechanismRequest">
+
+      <wsdl:part element="impl:printDBMechanism" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="listSubstructuresRequest">
+
+      <wsdl:part element="impl:listSubstructures" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="printMechanismRequest">
+
+      <wsdl:part element="impl:printMechanism" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="printDBMechanismResponse">
+
+      <wsdl:part element="impl:printDBMechanismResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="listReactionObjectResponse">
+
+      <wsdl:part element="impl:listReactionObjectResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="listMechanismsResponse">
+
+      <wsdl:part element="impl:listMechanismsResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="printSubstructureRequest">
+
+      <wsdl:part element="impl:printSubstructure" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="listSubstructuresResponse">
+
+      <wsdl:part element="impl:listSubstructuresResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="listDirRequest">
+
+      <wsdl:part element="impl:listDir" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="combineMechanismsRequest">
+
+      <wsdl:part element="impl:combineMechanisms" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="combineMechanismsResponse">
+
+      <wsdl:part element="impl:combineMechanismsResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="printMoleculeResponse">
+
+      <wsdl:part element="impl:printMoleculeResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="alternativeNamesResponse">
+
+      <wsdl:part element="impl:alternativeNamesResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="createSubmechanismRequest">
+
+      <wsdl:part element="impl:createSubmechanism" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="printMoleculeRequest">
+
+      <wsdl:part element="impl:printMolecule" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="printSubstructureResponse">
+
+      <wsdl:part element="impl:printSubstructureResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="printMechanismResponse">
+
+      <wsdl:part element="impl:printMechanismResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="listRxnPatternsResponse">
+
+      <wsdl:part element="impl:listRxnPatternsResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="printSubmechanismResponse">
+
+      <wsdl:part element="impl:printSubmechanismResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="printSubmechanismRequest">
+
+      <wsdl:part element="impl:printSubmechanism" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="listRxnPatternsRequest">
+
+      <wsdl:part element="impl:listRxnPatterns" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="listMoleculesRequest">
+
+      <wsdl:part element="impl:listMolecules" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="createSubmechanismResponse">
+
+      <wsdl:part element="impl:createSubmechanismResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="listDirResponse">
+
+      <wsdl:part element="impl:listDirResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="alternativeNamesRequest">
+
+      <wsdl:part element="impl:alternativeNames" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="listReactionObjectRequest">
+
+      <wsdl:part element="impl:listReactionObject" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="getFilesRequest">
+
+      <wsdl:part element="impl:getFiles" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="listSubmechanismFilesRequest">
+
+      <wsdl:part element="impl:listSubmechanismFiles" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:portType name="ReactionService">
+
+      <wsdl:operation name="getFiles">
+
+         <wsdl:input message="impl:getFilesRequest" name="getFilesRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:getFilesResponse" name="getFilesResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="putFiles">
+
+         <wsdl:input message="impl:putFilesRequest" name="putFilesRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:putFilesResponse" name="putFilesResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="listDir">
+
+         <wsdl:input message="impl:listDirRequest" name="listDirRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:listDirResponse" name="listDirResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="listMolecules">
+
+         <wsdl:input message="impl:listMoleculesRequest" name="listMoleculesRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:listMoleculesResponse" name="listMoleculesResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="listSubstructures">
+
+         <wsdl:input message="impl:listSubstructuresRequest" name="listSubstructuresRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:listSubstructuresResponse" name="listSubstructuresResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="listReactionObject">
+
+         <wsdl:input message="impl:listReactionObjectRequest" name="listReactionObjectRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:listReactionObjectResponse" name="listReactionObjectResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="listRxnPatterns">
+
+         <wsdl:input message="impl:listRxnPatternsRequest" name="listRxnPatternsRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:listRxnPatternsResponse" name="listRxnPatternsResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="listMechanisms">
+
+         <wsdl:input message="impl:listMechanismsRequest" name="listMechanismsRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:listMechanismsResponse" name="listMechanismsResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="listSubmechanismFiles">
+
+         <wsdl:input message="impl:listSubmechanismFilesRequest" name="listSubmechanismFilesRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:listSubmechanismFilesResponse" name="listSubmechanismFilesResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="printSubstructure">
+
+         <wsdl:input message="impl:printSubstructureRequest" name="printSubstructureRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:printSubstructureResponse" name="printSubstructureResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="printSubmechanism">
+
+         <wsdl:input message="impl:printSubmechanismRequest" name="printSubmechanismRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:printSubmechanismResponse" name="printSubmechanismResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="combineMechanisms">
+
+         <wsdl:input message="impl:combineMechanismsRequest" name="combineMechanismsRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:combineMechanismsResponse" name="combineMechanismsResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="alternativeNames">
+
+         <wsdl:input message="impl:alternativeNamesRequest" name="alternativeNamesRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:alternativeNamesResponse" name="alternativeNamesResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="printDBMechanism">
+
+         <wsdl:input message="impl:printDBMechanismRequest" name="printDBMechanismRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:printDBMechanismResponse" name="printDBMechanismResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="createSubmechanism">
+
+         <wsdl:input message="impl:createSubmechanismRequest" name="createSubmechanismRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:createSubmechanismResponse" name="createSubmechanismResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="printMechanism">
+
+         <wsdl:input message="impl:printMechanismRequest" name="printMechanismRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:printMechanismResponse" name="printMechanismResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="printRxnPattern">
+
+         <wsdl:input message="impl:printRxnPatternRequest" name="printRxnPatternRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:printRxnPatternResponse" name="printRxnPatternResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="printMolecule">
+
+         <wsdl:input message="impl:printMoleculeRequest" name="printMoleculeRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:printMoleculeResponse" name="printMoleculeResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+   </wsdl:portType>
+
+   <wsdl:binding name="ReactionServiceSoapBinding" type="impl:ReactionService">
+
+      <wsdlsoap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+
+      <wsdl:operation name="getFiles">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="getFilesRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="getFilesResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="putFiles">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="putFilesRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="putFilesResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="listDir">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="listDirRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="listDirResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="listMolecules">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="listMoleculesRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="listMoleculesResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="listSubstructures">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="listSubstructuresRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="listSubstructuresResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="listReactionObject">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="listReactionObjectRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="listReactionObjectResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="listRxnPatterns">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="listRxnPatternsRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="listRxnPatternsResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="listMechanisms">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="listMechanismsRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="listMechanismsResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="listSubmechanismFiles">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="listSubmechanismFilesRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="listSubmechanismFilesResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="printSubstructure">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="printSubstructureRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="printSubstructureResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="printSubmechanism">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="printSubmechanismRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="printSubmechanismResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="combineMechanisms">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="combineMechanismsRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="combineMechanismsResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="alternativeNames">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="alternativeNamesRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="alternativeNamesResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="printDBMechanism">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="printDBMechanismRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="printDBMechanismResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="createSubmechanism">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="createSubmechanismRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="createSubmechanismResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="printMechanism">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="printMechanismRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="printMechanismResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="printRxnPattern">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="printRxnPatternRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="printRxnPatternResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="printMolecule">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="printMoleculeRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="printMoleculeResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+   </wsdl:binding>
+
+   <wsdl:service name="ReactionServiceService">
+
+      <wsdl:port binding="impl:ReactionServiceSoapBinding" name="ReactionService">
+
+         <wsdlsoap:address location="http://localhost:8080/reactionWebService/services/ReactionService"/>
+
+      </wsdl:port>
+
+   </wsdl:service>
+
+</wsdl:definitions>

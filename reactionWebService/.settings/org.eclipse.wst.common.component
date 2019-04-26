@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="reactionWebService-1.0">
+        <wb-resource deploy-path="/" source-path="/target/m2e-wtp/web-resources"/>
+        <wb-resource deploy-path="/" source-path="/WebContent" tag="defaultRootSource"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src"/>
+        <dependent-module archiveName="ReactImport-1.0.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/ReactImport/ReactImport">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="reactionObjects-1.0.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/reactionObjects/reactionObjects">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="reactionDataObjects-1.0.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/reactionDataObjects/reactionDataObjects">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <property name="context-root" value="reactionWebService"/>
+        <property name="java-output-path" value="/reactionWebService/build/classes"/>
+    </wb-module>
+</project-modules>

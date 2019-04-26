@@ -1,0 +1,114 @@
+<ns1:deployment xmlns="http://xml.apache.org/axis/wsdd/" xmlns:java="http://xml.apache.org/axis/wsdd/providers/java" xmlns:ns1="http://xml.apache.org/axis/wsdd/">
+ <ns1:globalConfiguration>
+  <ns1:parameter name="sendMultiRefs" value="true"/>
+  <ns1:parameter name="disablePrettyXML" value="true"/>
+  <ns1:parameter name="adminPassword" value="admin"/>
+  <ns1:parameter name="attachments.Directory" value="/Users/edwardblurock/Reaction/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/wtpwebapps/reactionWebService/WEB-INF/attachments"/>
+  <ns1:parameter name="dotNetSoapEncFix" value="true"/>
+  <ns1:parameter name="enableNamespacePrefixOptimization" value="false"/>
+  <ns1:parameter name="sendXMLDeclaration" value="true"/>
+  <ns1:parameter name="attachments.implementation" value="org.apache.axis.attachments.AttachmentsImpl"/>
+  <ns1:parameter name="sendXsiTypes" value="true"/>
+  <ns1:requestFlow>
+   <ns1:handler type="java:org.apache.axis.handlers.JWSHandler">
+    <ns1:parameter name="scope" value="session"/>
+   </ns1:handler>
+   <ns1:handler type="java:org.apache.axis.handlers.JWSHandler">
+    <ns1:parameter name="scope" value="request"/>
+    <ns1:parameter name="extension" value=".jwr"/>
+   </ns1:handler>
+  </ns1:requestFlow>
+ </ns1:globalConfiguration>
+ <ns1:handler name="URLMapper" type="java:org.apache.axis.handlers.http.URLMapper"/>
+ <ns1:handler name="Authenticate" type="java:org.apache.axis.handlers.SimpleAuthenticationHandler"/>
+ <ns1:handler name="LocalResponder" type="java:org.apache.axis.transport.local.LocalResponder"/>
+ <ns1:service name="AdminService" provider="java:MSG">
+  <ns1:parameter name="allowedMethods" value="AdminService"/>
+  <ns1:parameter name="enableRemoteAdmin" value="false"/>
+  <ns1:parameter name="className" value="org.apache.axis.utils.Admin"/>
+  <ns1:namespace>http://xml.apache.org/axis/wsdd/</ns1:namespace>
+ </ns1:service>
+ <ns1:service name="Version" provider="java:RPC">
+  <ns1:parameter name="allowedMethods" value="getVersion"/>
+  <ns1:parameter name="className" value="org.apache.axis.Version"/>
+ </ns1:service>
+ <ns1:service name="ReactionService" provider="java:RPC" style="wrapped" use="literal">
+  <ns2:operation name="getFiles" qname="ns1:getFiles" returnQName="ns1:getFilesReturn" returnType="xsd:string" soapAction="" xmlns:ns1="http://reactionservice.esblurock.info" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:ns2="http://xml.apache.org/axis/wsdd/">
+   <ns2:parameter qname="ns1:filenames" type="xsd:string"/>
+  </ns2:operation>
+  <ns1:operation name="putFiles" qname="ns2:putFiles" returnQName="ns2:putFilesReturn" returnType="xsd:string" soapAction="" xmlns:ns2="http://reactionservice.esblurock.info" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+   <ns1:parameter qname="ns2:cml" type="xsd:string"/>
+  </ns1:operation>
+  <ns1:operation name="listDir" qname="ns3:listDir" returnQName="ns3:listDirReturn" returnType="xsd:string" soapAction="" xmlns:ns3="http://reactionservice.esblurock.info" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+   <ns1:parameter qname="ns3:dir" type="xsd:string"/>
+   <ns1:parameter qname="ns3:filter" type="xsd:string"/>
+   <ns1:parameter qname="ns3:showFiles" type="xsd:boolean"/>
+  </ns1:operation>
+  <ns1:operation name="listMolecules" qname="ns4:listMolecules" returnQName="ns4:listMoleculesReturn" returnType="xsd:string" soapAction="" xmlns:ns4="http://reactionservice.esblurock.info" xmlns:xsd="http://www.w3.org/2001/XMLSchema"/>
+  <ns1:operation name="listSubstructures" qname="ns5:listSubstructures" returnQName="ns5:listSubstructuresReturn" returnType="xsd:string" soapAction="" xmlns:ns5="http://reactionservice.esblurock.info" xmlns:xsd="http://www.w3.org/2001/XMLSchema"/>
+  <ns1:operation name="listReactionObject" qname="ns6:listReactionObject" returnQName="ns6:listReactionObjectReturn" returnType="xsd:string" soapAction="" xmlns:ns6="http://reactionservice.esblurock.info" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+   <ns1:parameter qname="ns6:cmd" type="xsd:string"/>
+  </ns1:operation>
+  <ns1:operation name="listRxnPatterns" qname="ns7:listRxnPatterns" returnQName="ns7:listRxnPatternsReturn" returnType="xsd:string" soapAction="" xmlns:ns7="http://reactionservice.esblurock.info" xmlns:xsd="http://www.w3.org/2001/XMLSchema"/>
+  <ns1:operation name="listMechanisms" qname="ns8:listMechanisms" returnQName="ns8:listMechanismsReturn" returnType="xsd:string" soapAction="" xmlns:ns8="http://reactionservice.esblurock.info" xmlns:xsd="http://www.w3.org/2001/XMLSchema"/>
+  <ns1:operation name="listSubmechanismFiles" qname="ns9:listSubmechanismFiles" returnQName="ns9:listSubmechanismFilesReturn" returnType="xsd:string" soapAction="" xmlns:ns9="http://reactionservice.esblurock.info" xmlns:xsd="http://www.w3.org/2001/XMLSchema"/>
+  <ns1:operation name="printSubstructure" qname="ns10:printSubstructure" returnQName="ns10:printSubstructureReturn" returnType="xsd:string" soapAction="" xmlns:ns10="http://reactionservice.esblurock.info" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+   <ns1:parameter qname="ns10:reference" type="xsd:string"/>
+  </ns1:operation>
+  <ns1:operation name="printSubmechanism" qname="ns11:printSubmechanism" returnQName="ns11:printSubmechanismReturn" returnType="xsd:string" soapAction="" xmlns:ns11="http://reactionservice.esblurock.info" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+   <ns1:parameter qname="ns11:pathDir" type="xsd:string"/>
+  </ns1:operation>
+  <ns1:operation name="combineMechanisms" qname="ns12:combineMechanisms" returnQName="ns12:combineMechanismsReturn" returnType="xsd:string" soapAction="" xmlns:ns12="http://reactionservice.esblurock.info" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+   <ns1:parameter qname="ns12:root" type="xsd:string"/>
+   <ns1:parameter qname="ns12:name" type="xsd:string"/>
+   <ns1:parameter qname="ns12:mechanisms" type="xsd:string"/>
+  </ns1:operation>
+  <ns1:operation name="alternativeNames" qname="ns13:alternativeNames" returnQName="ns13:alternativeNamesReturn" returnType="xsd:string" soapAction="" xmlns:ns13="http://reactionservice.esblurock.info" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+   <ns1:parameter qname="ns13:altname" type="xsd:string"/>
+   <ns1:parameter qname="ns13:rootMols" type="xsd:string"/>
+   <ns1:parameter qname="ns13:rootCorrs" type="xsd:string"/>
+  </ns1:operation>
+  <ns1:operation name="printDBMechanism" qname="ns14:printDBMechanism" returnQName="ns14:printDBMechanismReturn" returnType="xsd:string" soapAction="" xmlns:ns14="http://reactionservice.esblurock.info" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+   <ns1:parameter qname="ns14:name" type="xsd:string"/>
+  </ns1:operation>
+  <ns1:operation name="createSubmechanism" qname="ns15:createSubmechanism" returnQName="ns15:createSubmechanismReturn" returnType="xsd:string" soapAction="" xmlns:ns15="http://reactionservice.esblurock.info" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+   <ns1:parameter qname="ns15:mechanismName" type="xsd:string"/>
+   <ns1:parameter qname="ns15:molecules" type="xsd:string"/>
+   <ns1:parameter qname="ns15:outputRoot" type="xsd:string"/>
+  </ns1:operation>
+  <ns1:operation name="printMechanism" qname="ns16:printMechanism" returnQName="ns16:printMechanismReturn" returnType="xsd:string" soapAction="" xmlns:ns16="http://reactionservice.esblurock.info" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+   <ns1:parameter qname="ns16:pathConcat" type="xsd:string"/>
+  </ns1:operation>
+  <ns1:operation name="printRxnPattern" qname="ns17:printRxnPattern" returnQName="ns17:printRxnPatternReturn" returnType="xsd:string" soapAction="" xmlns:ns17="http://reactionservice.esblurock.info" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+   <ns1:parameter qname="ns17:reference" type="xsd:string"/>
+  </ns1:operation>
+  <ns1:operation name="printMolecule" qname="ns18:printMolecule" returnQName="ns18:printMoleculeReturn" returnType="xsd:string" soapAction="" xmlns:ns18="http://reactionservice.esblurock.info" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+   <ns1:parameter qname="ns18:reference" type="xsd:string"/>
+  </ns1:operation>
+  <ns1:parameter name="allowedMethods" value="printDBMechanism createSubmechanism printSubstructure listMolecules listSubstructures getFiles listMechanisms printMechanism combineMechanisms alternativeNames putFiles listReactionObject listSubmechanismFiles listRxnPatterns printRxnPattern listDir printSubmechanism printMolecule"/>
+  <ns1:parameter name="typeMappingVersion" value="1.2"/>
+  <ns1:parameter name="wsdlPortType" value="ReactionService"/>
+  <ns1:parameter name="className" value="info.esblurock.reactionservice.ReactionService"/>
+  <ns1:parameter name="wsdlServicePort" value="ReactionService"/>
+  <ns1:parameter name="schemaQualified" value="http://reactionservice.esblurock.info"/>
+  <ns1:parameter name="wsdlTargetNamespace" value="http://reactionservice.esblurock.info"/>
+  <ns1:parameter name="wsdlServiceElement" value="ReactionServiceService"/>
+ </ns1:service>
+ <ns1:transport name="http">
+  <ns1:requestFlow>
+   <ns1:handler type="URLMapper"/>
+   <ns1:handler type="java:org.apache.axis.handlers.http.HTTPAuthHandler"/>
+  </ns1:requestFlow>
+  <ns1:parameter name="qs:list" value="org.apache.axis.transport.http.QSListHandler"/>
+  <ns1:parameter name="qs:wsdl" value="org.apache.axis.transport.http.QSWSDLHandler"/>
+  <ns1:parameter name="qs.list" value="org.apache.axis.transport.http.QSListHandler"/>
+  <ns1:parameter name="qs.method" value="org.apache.axis.transport.http.QSMethodHandler"/>
+  <ns1:parameter name="qs:method" value="org.apache.axis.transport.http.QSMethodHandler"/>
+  <ns1:parameter name="qs.wsdl" value="org.apache.axis.transport.http.QSWSDLHandler"/>
+ </ns1:transport>
+ <ns1:transport name="local">
+  <ns1:responseFlow>
+   <ns1:handler type="LocalResponder"/>
+  </ns1:responseFlow>
+ </ns1:transport>
+</ns1:deployment>
