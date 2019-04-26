@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Form version="1.0" type="org.netbeans.modules.form.forminfo.JPanelFormInfo">
+  <SyntheticProperties>
+    <SyntheticProperty name="encoding" type="java.lang.String" value="UTF-8"/>
+  </SyntheticProperties>
+
+  <Layout class="org.netbeans.modules.form.compat2.layouts.DesignGridLayout">
+    <Property name="rows" type="int" value="1"/>
+    <Property name="columns" type="int" value="2"/>
+  </Layout>
+  <SubComponents>
+    <Container class="javax.swing.JPanel" name="jPanel1">
+
+      <Events>
+        <EventHandler event="mouseClicked" handler="jPanel1MouseClicked"/>
+        <EventHandler event="mouseExited" handler="jPanel1MouseExited"/>
+      </Events>
+      <Constraints>
+        <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignGridLayout" value="org.netbeans.modules.form.compat2.layouts.DesignGridLayout$GridConstraintsDescription"/>
+      </Constraints>
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.DesignFlowLayout"/>
+      <SubComponents>
+        <Container class="react.utilities.SimpleManageListItems" name="environmentList">
+
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_CreateCodeCustom" type="java.lang.String" value="new SimpleManageListItems(envTitle,possibleEnvironments,maxSize);&#xa;"/>
+          </AuxValues>
+          <Constraints>
+          </Constraints>
+
+          <Layout class="org.netbeans.modules.form.compat2.layouts.DesignGridBagLayout"/>
+        </Container>
+      </SubComponents>
+    </Container>
+    <Container class="javax.swing.JPanel" name="jPanel2">
+
+      <Events>
+        <EventHandler event="mouseClicked" handler="jPanel2MouseClicked"/>
+        <EventHandler event="mouseExited" handler="jPanel2MouseExited"/>
+      </Events>
+      <Constraints>
+        <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignGridLayout" value="org.netbeans.modules.form.compat2.layouts.DesignGridLayout$GridConstraintsDescription"/>
+      </Constraints>
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.DesignFlowLayout"/>
+      <SubComponents>
+        <Container class="react.utilities.SimpleManageListItems" name="moduleList">
+
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_CreateCodeCustom" type="java.lang.String" value="new SimpleManageListItems(modTitle,possibleModules,maxSize);"/>
+          </AuxValues>
+          <Constraints>
+          </Constraints>
+
+          <Layout class="org.netbeans.modules.form.compat2.layouts.DesignGridBagLayout"/>
+        </Container>
+      </SubComponents>
+    </Container>
+  </SubComponents>
+</Form>

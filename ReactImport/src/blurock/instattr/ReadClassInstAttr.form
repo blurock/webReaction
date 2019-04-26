@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Form version="1.0" type="org.netbeans.modules.form.forminfo.JPanelFormInfo">
+
+  <Layout class="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout"/>
+  <SubComponents>
+    <Container class="javax.swing.JPanel" name="jPanel1">
+      <Properties>
+        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+          <Border info="org.netbeans.modules.form.compat2.border.TitledBorderInfo">
+            <TitledBorder title="Setup"/>
+          </Border>
+        </Property>
+      </Properties>
+      <Constraints>
+        <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout" value="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout$BorderConstraintsDescription">
+          <BorderConstraints direction="Center"/>
+        </Constraint>
+      </Constraints>
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.DesignGridLayout">
+        <Property name="columns" type="int" value="2"/>
+        <Property name="rows" type="int" value="4"/>
+      </Layout>
+      <SubComponents>
+        <Component class="javax.swing.JLabel" name="dirLabel">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Directory"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JTextField" name="defaultDirectory">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="./"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JButton" name="rootNameButton">
+          <Properties>
+            <Property name="toolTipText" type="java.lang.String" value="Click to set files to standard names"/>
+            <Property name="text" type="java.lang.String" value="Root Name"/>
+          </Properties>
+          <Events>
+            <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="rootNameButtonMouseClicked"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JTextField" name="rootName">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Test"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JButton" name="classFileNameButton">
+          <Properties>
+            <Property name="toolTipText" type="java.lang.String" value="Click to browse for class file"/>
+            <Property name="text" type="java.lang.String" value="Class File"/>
+          </Properties>
+          <Events>
+            <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="classFileNameButtonMouseClicked"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JTextField" name="classFileName">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="TestClass.inp"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JButton" name="attrFileNameButton">
+          <Properties>
+            <Property name="toolTipText" type="java.lang.String" value="Click to browse for Attribute File"/>
+            <Property name="text" type="java.lang.String" value="Attribute File"/>
+          </Properties>
+          <Events>
+            <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="attrFileNameButtonMouseClicked"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JTextField" name="attrFileName">
+          <Properties>
+            <Property name="toolTipText" type="java.lang.String" value="Attribute file to read"/>
+            <Property name="text" type="java.lang.String" value="Test.inp"/>
+          </Properties>
+        </Component>
+      </SubComponents>
+    </Container>
+    <Container class="javax.swing.JPanel" name="jPanel2">
+      <Properties>
+        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+          <Border info="org.netbeans.modules.form.compat2.border.TitledBorderInfo">
+            <TitledBorder title="Read"/>
+          </Border>
+        </Property>
+      </Properties>
+      <Constraints>
+        <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout" value="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout$BorderConstraintsDescription">
+          <BorderConstraints direction="South"/>
+        </Constraint>
+      </Constraints>
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.DesignGridLayout">
+        <Property name="columns" type="int" value="0"/>
+        <Property name="rows" type="int" value="1"/>
+      </Layout>
+      <SubComponents>
+        <Component class="javax.swing.JButton" name="readFiles">
+          <Properties>
+            <Property name="toolTipText" type="java.lang.String" value="Read in both attribute and class files"/>
+            <Property name="text" type="java.lang.String" value="Read Files"/>
+          </Properties>
+          <Events>
+            <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="readFilesMouseClicked"/>
+          </Events>
+        </Component>
+      </SubComponents>
+    </Container>
+  </SubComponents>
+</Form>

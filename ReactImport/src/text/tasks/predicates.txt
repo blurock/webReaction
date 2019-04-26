@@ -1,0 +1,13 @@
+Creation of Predicates
+
+Critical Points:
+
+A set of fuzzy partitions (a set of fuzzy predicates)
+are created from the critical points.  Several types
+of partitions can be created:
+
+LTGT: Less than and greater than the critical point
+LTEQGT: Less than, equal and greater than the critical point
+EQNE: Equal to  and not equal to the critical point
+LTEQEQGT: Less than, equal to (one to one side, one to the other side) and greater than the critical point
+

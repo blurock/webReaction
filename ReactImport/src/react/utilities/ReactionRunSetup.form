@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Form version="1.0" type="org.netbeans.modules.form.forminfo.JPanelFormInfo">
+  <SyntheticProperties>
+    <SyntheticProperty name="encoding" type="java.lang.String" value="UTF-8"/>
+  </SyntheticProperties>
+
+  <Layout class="org.netbeans.modules.form.compat2.layouts.DesignGridLayout">
+    <Property name="rows" type="int" value="5"/>
+    <Property name="columns" type="int" value="4"/>
+  </Layout>
+  <SubComponents>
+    <Component class="javax.swing.JLabel" name="jLabel1">
+      <Properties>
+        <Property name="text" type="java.lang.String" editor="org.netbeans.beaninfo.editors.StringEditor" value="Molecules"/>
+        <Property name="toolTipText" type="java.lang.String" editor="org.netbeans.beaninfo.editors.StringEditor" value="Setup for molecule information"/>
+      </Properties>
+      <Constraints>
+        <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignGridLayout" value="org.netbeans.modules.form.compat2.layouts.DesignGridLayout$GridConstraintsDescription"/>
+      </Constraints>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLabel2">
+      <Properties>
+        <Property name="text" type="java.lang.String" editor="org.netbeans.beaninfo.editors.StringEditor" value="Reactions"/>
+        <Property name="toolTipText" type="java.lang.String" editor="org.netbeans.beaninfo.editors.StringEditor" value="Scripts for Reaction setup"/>
+      </Properties>
+      <Constraints>
+        <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignGridLayout" value="org.netbeans.modules.form.compat2.layouts.DesignGridLayout$GridConstraintsDescription"/>
+      </Constraints>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLabel3">
+      <Properties>
+        <Property name="text" type="java.lang.String" editor="org.netbeans.beaninfo.editors.StringEditor" value="Mechanisms"/>
+        <Property name="toolTipText" type="java.lang.String" editor="org.netbeans.beaninfo.editors.StringEditor" value="Setup for mechanisms"/>
+      </Properties>
+      <Constraints>
+        <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignGridLayout" value="org.netbeans.modules.form.compat2.layouts.DesignGridLayout$GridConstraintsDescription"/>
+      </Constraints>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLabel4">
+      <Properties>
+        <Property name="text" type="java.lang.String" editor="org.netbeans.beaninfo.editors.StringEditor" value="Thermo"/>
+        <Property name="toolTipText" type="java.lang.String" editor="org.netbeans.beaninfo.editors.StringEditor" value="Setup of thermodynamic information"/>
+      </Properties>
+      <Constraints>
+        <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignGridLayout" value="org.netbeans.modules.form.compat2.layouts.DesignGridLayout$GridConstraintsDescription"/>
+      </Constraints>
+    </Component>
+    <Component class="javax.swing.JButton" name="molStandard">
+      <Properties>
+        <Property name="toolTipText" type="java.lang.String" editor="org.netbeans.beaninfo.editors.StringEditor" value="Standard Setup of Just molecule information"/>
+        <Property name="text" type="java.lang.String" editor="org.netbeans.beaninfo.editors.StringEditor" value="Standard"/>
+      </Properties>
+      <Constraints>
+        <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignGridLayout" value="org.netbeans.modules.form.compat2.layouts.DesignGridLayout$GridConstraintsDescription"/>
+      </Constraints>
+    </Component>
+    <Component class="javax.swing.JButton" name="rxnStandard">
+      <Properties>
+        <Property name="text" type="java.lang.String" editor="org.netbeans.beaninfo.editors.StringEditor" value="Standard"/>
+      </Properties>
+      <Constraints>
+        <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignGridLayout" value="org.netbeans.modules.form.compat2.layouts.DesignGridLayout$GridConstraintsDescription"/>
+      </Constraints>
+    </Component>
+    <Component class="javax.swing.JButton" name="mechStandard">
+      <Properties>
+        <Property name="toolTipText" type="java.lang.String" editor="org.netbeans.beaninfo.editors.StringEditor" value="Standard setup of mechanism, reaction and molecule data"/>
+        <Property name="text" type="java.lang.String" editor="org.netbeans.beaninfo.editors.StringEditor" value="Standard"/>
+      </Properties>
+
+      <Events>
+        <EventHandler event="mouseClicked" handler="mechStandard"/>
+      </Events>
+      <Constraints>
+        <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignGridLayout" value="org.netbeans.modules.form.compat2.layouts.DesignGridLayout$GridConstraintsDescription"/>
+      </Constraints>
+    </Component>
+    <Component class="javax.swing.JButton" name="thmStandard">
+      <Properties>
+        <Property name="text" type="java.lang.String" editor="org.netbeans.beaninfo.editors.StringEditor" value="Standard"/>
+      </Properties>
+      <Constraints>
+        <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignGridLayout" value="org.netbeans.modules.form.compat2.layouts.DesignGridLayout$GridConstraintsDescription"/>
+      </Constraints>
+    </Component>
+    <Component class="javax.swing.JButton" name="dbMolecule">
+      <Properties>
+        <Property name="text" type="java.lang.String" editor="org.netbeans.beaninfo.editors.StringEditor" value="DB"/>
+      </Properties>
+      <Constraints>
+        <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignGridLayout" value="org.netbeans.modules.form.compat2.layouts.DesignGridLayout$GridConstraintsDescription"/>
+      </Constraints>
+    </Component>
+    <Component class="javax.swing.JButton" name="dbReaction">
+      <Properties>
+        <Property name="text" type="java.lang.String" editor="org.netbeans.beaninfo.editors.StringEditor" value="DB"/>
+      </Properties>
+      <Constraints>
+        <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignGridLayout" value="org.netbeans.modules.form.compat2.layouts.DesignGridLayout$GridConstraintsDescription"/>
+      </Constraints>
+    </Component>
+    <Component class="javax.swing.JButton" name="dbMechanisms">
+      <Properties>
+        <Property name="text" type="java.lang.String" editor="org.netbeans.beaninfo.editors.StringEditor" value="DB"/>
+      </Properties>
+      <Constraints>
+        <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignGridLayout" value="org.netbeans.modules.form.compat2.layouts.DesignGridLayout$GridConstraintsDescription"/>
+      </Constraints>
+    </Component>
+    <Component class="javax.swing.JButton" name="dbThermo">
+      <Properties>
+        <Property name="text" type="java.lang.String" editor="org.netbeans.beaninfo.editors.StringEditor" value="DB"/>
+      </Properties>
+      <Constraints>
+        <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignGridLayout" value="org.netbeans.modules.form.compat2.layouts.DesignGridLayout$GridConstraintsDescription"/>
+      </Constraints>
+    </Component>
+  </SubComponents>
+</Form>

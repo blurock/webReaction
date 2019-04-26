@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE attributes PUBLIC "-//NetBeans//DTD DefaultAttributes 1.0//EN" "http://www.netbeans.org/dtds/attributes-1_0.dtd">
+<attributes version="1.0">
+    <fileobject name="DBaseDataConjunction.java">
+        <attr name="class_dependency_blurock.opandalgs.ops.DBaseDataOperation" stringvalue="DBaseDataConjunction"/>
+    </fileobject>
+    <fileobject name="DataSetOfLogicDescriptionsClass.java">
+        <attr name="template" serialvalue="aced0005737200266f72672e6f70656e6964652e7574696c2e696f2e4e624d61727368616c6c65644f626a6563746cd5cc1aa397c0f2020002490004686173685b00086f626a42797465737400025b4278700000001170"/>
+    </fileobject>
+    <fileobject name="DataLogicDescriptionClass.java">
+        <attr name="template" serialvalue="aced0005737200266f72672e6f70656e6964652e7574696c2e696f2e4e624d61727368616c6c65644f626a6563746cd5cc1aa397c0f2020002490004686173685b00086f626a42797465737400025b4278700000001170"/>
+    </fileobject>
+    <fileobject name="DBaseDataDescription.java">
+        <attr name="EA-OpenIDE-Connection" serialvalue="aced0005737200146a6176612e7574696c2e4c696e6b65644c6973740c29535d4a608822030000787077040000000078"/>
+        <attr name="class_dependency_blurock.coreobjects.DBaseDataSetOfObjects" stringvalue="DBaseDataDescription"/>
+    </fileobject>
+    <fileobject name="BaseDataSetOfLogicDescriptions.java">
+        <attr name="template" serialvalue="aced0005737200266f72672e6f70656e6964652e7574696c2e696f2e4e624d61727368616c6c65644f626a6563746cd5cc1aa397c0f2020002490004686173685b00086f626a42797465737400025b4278700000001170"/>
+    </fileobject>
+    <fileobject name="DataConjunctionClass.java">
+        <attr name="class_dependency_blurock.opandalgs.ops.DataOperationClass" stringvalue="DataConjunctionClass"/>
+    </fileobject>
+    <fileobject name="DataDescriptionClass.java">
+        <attr name="class_dependency_blurock.coreobjects.DataSetOfObjectsClass" stringvalue="DataDescriptionClass"/>
+    </fileobject>
+    <fileobject name="BaseDataLogicDescription.java">
+        <attr name="template" serialvalue="aced0005737200266f72672e6f70656e6964652e7574696c2e696f2e4e624d61727368616c6c65644f626a6563746cd5cc1aa397c0f2020002490004686173685b00086f626a42797465737400025b4278700000001170"/>
+    </fileobject>
+    <fileobject name="DBaseDataLogicDescription.java">
+        <attr name="template" serialvalue="aced0005737200266f72672e6f70656e6964652e7574696c2e696f2e4e624d61727368616c6c65644f626a6563746cd5cc1aa397c0f2020002490004686173685b00086f626a42797465737400025b4278700000001170"/>
+    </fileobject>
+    <fileobject name="DBaseDataSetOfLogicDescriptions.java">
+        <attr name="template" serialvalue="aced0005737200266f72672e6f70656e6964652e7574696c2e696f2e4e624d61727368616c6c65644f626a6563746cd5cc1aa397c0f2020002490004686173685b00086f626a42797465737400025b4278700000001170"/>
+    </fileobject>
+    <fileobject name="BaseDataDescription.java">
+        <attr name="class_dependency_blurock.coreobjects.BaseDataSetOfObjects" stringvalue="BaseDataDescription"/>
+        <attr name="EA-OpenIDE-Connection" serialvalue="aced0005737200146a6176612e7574696c2e4c696e6b65644c6973740c29535d4a608822030000787077040000000078"/>
+    </fileobject>
+    <fileobject name="BaseDataConjunction.java">
+        <attr name="class_dependency_blurock.opandalgs.ops.BaseDataOperation" stringvalue="BaseDataConjunction"/>
+    </fileobject>
+</attributes>

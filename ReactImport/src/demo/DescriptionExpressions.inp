@@ -1,0 +1,38 @@
+        DescriptionExpressions:
+        ParameterSet:
+        ClassNamePairs:
+                X                  Real
+                Width              Real
+                Top                Real
+                Bottom             Real
+        END
+                %% X  -------------------------------------------------
+                3.0
+                %% Width -------------------------------------------------
+                1.0
+                %% Top -------------------------------------------------
+                0.0
+                %% Bottom -------------------------------------------------
+                0.0
+        Operation:
+        Post: NoPostOperation
+        BeginDescription:
+                ParameterSet:
+                ClassNamePairs:
+                GreaterThanX        SimpleParameterizedExpression
+                LessThanX           SimpleParameterizedExpression
+                EqualToX            SimpleParameterizedExpression
+                END
+                        ParameterSet: ClassNamePairs: END Operation:
+                        END
+                     ( ParPredicate ( Set Bottom Bottom Top    X             X            ( + X Width ) )  Type )
+                        ParameterSet: ClassNamePairs: END Operation:
+                        END
+                     ( ParPredicate ( Set Top Top Bottom       ( - X Width ) ( - X Width ) X )             Type )
+                        ParameterSet: ClassNamePairs: END Operation:
+                        END
+                     ( ParPredicate ( Set Bottom Top Bottom    ( - X Width ) X             ( + X Width ) ) Type )
+        EndDescription:
+                        Operation:
+                        END
+                        ( LDescription ( Substitute ( Set PX PWidth PTop PBottom ) ParameterizedDescription ) Graph )

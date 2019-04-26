@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE attributes PUBLIC "-//NetBeans//DTD DefaultAttributes 1.0//EN" "http://www.netbeans.org/dtds/attributes-1_0.dtd">
+<attributes version="1.0">
+    <fileobject name="AttributeFrame.java">
+        <attr name="template" serialvalue="aced0005737200266f72672e6f70656e6964652e7574696c2e696f2e4e624d61727368616c6c65644f626a6563746cd5cc1aa397c0f2020002490004686173685b00086f626a42797465737400025b4278700000001170"/>
+    </fileobject>
+    <fileobject name="ClassTree.java">
+        <attr name="template" serialvalue="aced0005737200266f72672e6f70656e6964652e7574696c2e696f2e4e624d61727368616c6c65644f626a6563746cd5cc1aa397c0f2020002490004686173685b00086f626a42797465737400025b4278700000001170"/>
+    </fileobject>
+    <fileobject name="ClassTreeBond.java">
+        <attr name="template" serialvalue="aced0005737200266f72672e6f70656e6964652e7574696c2e696f2e4e624d61727368616c6c65644f626a6563746cd5cc1aa397c0f2020002490004686173685b00086f626a42797465737400025b4278700000001170"/>
+    </fileobject>
+    <fileobject name="ClassTreeNode.java">
+        <attr name="template" serialvalue="aced0005737200266f72672e6f70656e6964652e7574696c2e696f2e4e624d61727368616c6c65644f626a6563746cd5cc1aa397c0f2020002490004686173685b00086f626a42797465737400025b4278700000001170"/>
+    </fileobject>
+    <fileobject name="DemoFrame.java">
+        <attr name="class_dependency_javax.swing.JFrame" stringvalue="DemoFrame"/>
+        <attr name="template" serialvalue="aced0005737200266f72672e6f70656e6964652e7574696c2e696f2e4e624d61727368616c6c65644f626a6563746cd5cc1aa397c0f2020002490004686173685b00086f626a42797465737400025b4278700000001170"/>
+    </fileobject>
+    <fileobject name="ExampleFrame.java">
+        <attr name="class_dependency_javax.swing.JFrame" stringvalue="ExampleFrame"/>
+        <attr name="template" serialvalue="aced0005737200266f72672e6f70656e6964652e7574696c2e696f2e4e624d61727368616c6c65644f626a6563746cd5cc1aa397c0f2020002490004686173685b00086f626a42797465737400025b4278700000001170"/>
+    </fileobject>
+    <fileobject name="Hierarchy.java">
+        <attr name="template" serialvalue="aced0005737200266f72672e6f70656e6964652e7574696c2e696f2e4e624d61727368616c6c65644f626a6563746cd5cc1aa397c0f2020002490004686173685b00086f626a42797465737400025b4278700000001170"/>
+    </fileobject>
+    <fileobject name="InitializeReaction.java">
+        <attr name="template" serialvalue="aced0005737200266f72672e6f70656e6964652e7574696c2e696f2e4e624d61727368616c6c65644f626a6563746cd5cc1aa397c0f2020002490004686173685b00086f626a42797465737400025b4278700000001170"/>
+    </fileobject>
+    <fileobject name="InitializeSystem.java">
+        <attr name="class_dependency_javax.swing.JPanel" stringvalue="InitializeSystem"/>
+        <attr name="template" serialvalue="aced0005737200266f72672e6f70656e6964652e7574696c2e696f2e4e624d61727368616c6c65644f626a6563746cd5cc1aa397c0f2020002490004686173685b00086f626a42797465737400025b4278700000001170"/>
+    </fileobject>
+    <fileobject name="LogoFrame.java">
+        <attr name="class_dependency_javax.swing.JFrame" stringvalue="LogoFrame"/>
+    </fileobject>
+    <fileobject name="ManipulateModule.java">
+        <attr name="template" serialvalue="aced0005737200266f72672e6f70656e6964652e7574696c2e696f2e4e624d61727368616c6c65644f626a6563746cd5cc1aa397c0f2020002490004686173685b00086f626a42797465737400025b4278700000001170"/>
+    </fileobject>
+    <fileobject name="ObjectAsTreeNode.java">
+        <attr name="template" serialvalue="aced0005737200266f72672e6f70656e6964652e7574696c2e696f2e4e624d61727368616c6c65644f626a6563746cd5cc1aa397c0f2020002490004686173685b00086f626a42797465737400025b4278700000001170"/>
+    </fileobject>
+    <fileobject name="ObjectDisplayManager.java">
+        <attr name="template" serialvalue="aced0005737200266f72672e6f70656e6964652e7574696c2e696f2e4e624d61727368616c6c65644f626a6563746cd5cc1aa397c0f2020002490004686173685b00086f626a42797465737400025b4278700000001170"/>
+    </fileobject>
+    <fileobject name="ObjectNotFoundException.java">
+        <attr name="template" serialvalue="aced0005737200266f72672e6f70656e6964652e7574696c2e696f2e4e624d61727368616c6c65644f626a6563746cd5cc1aa397c0f2020002490004686173685b00086f626a42797465737400025b4278700000001170"/>
+    </fileobject>
+    <fileobject name="PackageModuleChooser.java">
+        <attr name="template" serialvalue="aced0005737200266f72672e6f70656e6964652e7574696c2e696f2e4e624d61727368616c6c65644f626a6563746cd5cc1aa397c0f2020002490004686173685b00086f626a42797465737400025b4278700000001170"/>
+    </fileobject>
+    <fileobject name="RWManager.java">
+        <attr name="class_dependency_blurock.core.RWManagerBase" stringvalue="RWManager"/>
+        <attr name="template" serialvalue="aced0005737200266f72672e6f70656e6964652e7574696c2e696f2e4e624d61727368616c6c65644f626a6563746cd5cc1aa397c0f2020002490004686173685b00086f626a42797465737400025b4278700000001170"/>
+    </fileobject>
+    <fileobject name="RWManagerFromReactLink.java">
+        <attr name="template" serialvalue="aced0005737200266f72672e6f70656e6964652e7574696c2e696f2e4e624d61727368616c6c65644f626a6563746cd5cc1aa397c0f2020002490004686173685b00086f626a42797465737400025b4278700000001170"/>
+    </fileobject>
+    <fileobject name="RWManagerString.java">
+        <attr name="class_dependency_blurock.core.RWManagerBase" stringvalue="RWManagerString"/>
+    </fileobject>
+    <fileobject name="ReactionObjectInitialization.java">
+        <attr name="class_dependency_javax.swing.JPanel" stringvalue="ReactionObjectInitialization"/>
+        <attr name="template" serialvalue="aced0005737200266f72672e6f70656e6964652e7574696c2e696f2e4e624d61727368616c6c65644f626a6563746cd5cc1aa397c0f2020002490004686173685b00086f626a42797465737400025b4278700000001170"/>
+    </fileobject>
+    <fileobject name="ReadFile.java">
+        <attr name="template" serialvalue="aced0005737200266f72672e6f70656e6964652e7574696c2e696f2e4e624d61727368616c6c65644f626a6563746cd5cc1aa397c0f2020002490004686173685b00086f626a42797465737400025b4278700000001170"/>
+    </fileobject>
+    <fileobject name="RunAlgorithm.java">
+        <attr name="template" serialvalue="aced0005737200266f72672e6f70656e6964652e7574696c2e696f2e4e624d61727368616c6c65644f626a6563746cd5cc1aa397c0f2020002490004686173685b00086f626a42797465737400025b4278700000001170"/>
+    </fileobject>
+    <fileobject name="RunCommand.java">
+        <attr name="template" serialvalue="aced0005737200266f72672e6f70656e6964652e7574696c2e696f2e4e624d61727368616c6c65644f626a6563746cd5cc1aa397c0f2020002490004686173685b00086f626a42797465737400025b4278700000001170"/>
+    </fileobject>
+    <fileobject name="RunScriptWithOutput.java">
+        <attr name="template" serialvalue="aced0005737200266f72672e6f70656e6964652e7574696c2e696f2e4e624d61727368616c6c65644f626a6563746cd5cc1aa397c0f2020002490004686173685b00086f626a42797465737400025b4278700000001170"/>
+    </fileobject>
+    <fileobject name="RunSystemAlgorithm.java">
+        <attr name="template" serialvalue="aced0005737200266f72672e6f70656e6964652e7574696c2e696f2e4e624d61727368616c6c65644f626a6563746cd5cc1aa397c0f2020002490004686173685b00086f626a42797465737400025b4278700000001170"/>
+    </fileobject>
+    <fileobject name="RunSystemLineCommand.java">
+        <attr name="template" serialvalue="aced0005737200266f72672e6f70656e6964652e7574696c2e696f2e4e624d61727368616c6c65644f626a6563746cd5cc1aa397c0f2020002490004686173685b00086f626a42797465737400025b4278700000001170"/>
+    </fileobject>
+    <fileobject name="TopTreeInfoPanel.java">
+        <attr name="template" serialvalue="aced0005737200266f72672e6f70656e6964652e7574696c2e696f2e4e624d61727368616c6c65644f626a6563746cd5cc1aa397c0f2020002490004686173685b00086f626a42797465737400025b4278700000001170"/>
+    </fileobject>
+    <fileobject name="TopTreePanel.java">
+        <attr name="class_dependency_javax.swing.JPanel" stringvalue="TopTreePanel"/>
+        <attr name="template" serialvalue="aced0005737200266f72672e6f70656e6964652e7574696c2e696f2e4e624d61727368616c6c65644f626a6563746cd5cc1aa397c0f2020002490004686173685b00086f626a42797465737400025b4278700000001170"/>
+    </fileobject>
+    <fileobject name="historyLevel.java">
+        <attr name="template" serialvalue="aced0005737200266f72672e6f70656e6964652e7574696c2e696f2e4e624d61727368616c6c65644f626a6563746cd5cc1aa397c0f2020002490004686173685b00086f626a42797465737400025b4278700000001170"/>
+    </fileobject>
+</attributes>

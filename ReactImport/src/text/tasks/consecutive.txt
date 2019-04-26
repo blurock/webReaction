@@ -1,0 +1,20 @@
+Determining Consecutive Sequences
+
+Sets of instances (given in KeyWords) are examined
+to find the 'Consecutive' Sequences.
+
+Sort:  
+
+The reference of 'Consecutiveness' is given by a 
+sorted list of instances.  The 'Sort' routines
+orders the training set of instances according
+to a specified parameter.
+
+Consecutive:
+
+The sorted set of instances is used find
+consecutive series in a set of given
+instance subsets (the usual source of these
+sets are the nodes of a clustering hierarchy).
+
+

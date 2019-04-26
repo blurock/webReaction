@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE attributes PUBLIC "-//NetBeans//DTD DefaultAttributes 1.0//EN" "http://www.netbeans.org/dtds/attributes-1_0.dtd">
+<attributes version="1.0">
+    <fileobject name="ClusterParameters.java">
+        <attr name="class_dependency_javax.swing.JPanel" stringvalue="ClusterParameters"/>
+    </fileobject>
+    <fileobject name="ConsecutiveClusteringPanel.java">
+        <attr name="class_dependency_javax.swing.JPanel" stringvalue="ConsecutiveClusteringPanel"/>
+        <attr name="template" serialvalue="aced0005737200266f72672e6f70656e6964652e7574696c2e696f2e4e624d61727368616c6c65644f626a6563746cd5cc1aa397c0f2020002490004686173685b00086f626a42797465737400025b4278700000001170"/>
+    </fileobject>
+    <fileobject name="FormationClusteringPanel.java">
+        <attr name="class_dependency_javax.swing.JPanel" stringvalue="FormationClusteringPanel"/>
+        <attr name="template" serialvalue="aced0005737200266f72672e6f70656e6964652e7574696c2e696f2e4e624d61727368616c6c65644f626a6563746cd5cc1aa397c0f2020002490004686173685b00086f626a42797465737400025b4278700000001170"/>
+    </fileobject>
+    <fileobject name="InitializeRegionClusteringPanel.java">
+        <attr name="class_dependency_javax.swing.JPanel" stringvalue="InitializeRegionClusteringPanel"/>
+        <attr name="template" serialvalue="aced0005737200266f72672e6f70656e6964652e7574696c2e696f2e4e624d61727368616c6c65644f626a6563746cd5cc1aa397c0f2020002490004686173685b00086f626a42797465737400025b4278700000001170"/>
+    </fileobject>
+    <fileobject name="MechanismAsGraphMenu.java">
+        <attr name="template" serialvalue="aced0005737200266f72672e6f70656e6964652e7574696c2e696f2e4e624d61727368616c6c65644f626a6563746cd5cc1aa397c0f2020002490004686173685b00086f626a42797465737400025b4278700000001170"/>
+    </fileobject>
+    <fileobject name="MoleculeMenu.java">
+        <attr name="template" serialvalue="aced0005737200266f72672e6f70656e6964652e7574696c2e696f2e4e624d61727368616c6c65644f626a6563746cd5cc1aa397c0f2020002490004686173685b00086f626a42797465737400025b4278700000001170"/>
+    </fileobject>
+    <fileobject name="PredicatesClusteringPanel.java">
+        <attr name="class_dependency_javax.swing.JPanel" stringvalue="PredicatesClusteringPanel"/>
+        <attr name="template" serialvalue="aced0005737200266f72672e6f70656e6964652e7574696c2e696f2e4e624d61727368616c6c65644f626a6563746cd5cc1aa397c0f2020002490004686173685b00086f626a42797465737400025b4278700000001170"/>
+    </fileobject>
+    <fileobject name="RxnPatMenu.java">
+        <attr name="template" serialvalue="aced0005737200266f72672e6f70656e6964652e7574696c2e696f2e4e624d61727368616c6c65644f626a6563746cd5cc1aa397c0f2020002490004686173685b00086f626a42797465737400025b4278700000001170"/>
+    </fileobject>
+    <fileobject name="TopReactionFrame.java">
+        <attr name="class_dependency_javax.swing.JFrame" stringvalue="TopReactionFrame"/>
+        <attr name="template" serialvalue="aced0005737200266f72672e6f70656e6964652e7574696c2e696f2e4e624d61727368616c6c65644f626a6563746cd5cc1aa397c0f2020002490004686173685b00086f626a42797465737400025b4278700000001170"/>
+    </fileobject>
+</attributes>

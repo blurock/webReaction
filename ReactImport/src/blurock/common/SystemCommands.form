@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Form version="1.0" type="org.netbeans.modules.form.forminfo.JPanelFormInfo">
+  <SyntheticProperties>
+    <SyntheticProperty name="encoding" type="java.lang.String" value="UTF-8"/>
+  </SyntheticProperties>
+
+  <Layout class="org.netbeans.modules.form.compat2.layouts.DesignGridLayout">
+    <Property name="rows" type="int" value="5"/>
+    <Property name="columns" type="int" value="1"/>
+  </Layout>
+  <SubComponents>
+    <Container class="react.common.StandardName" name="InstanceList">
+      <Properties>
+        <Property name="name" type="java.lang.String" editor="org.netbeans.beaninfo.editors.StringEditor" value="Instance List"/>
+        <Property name="toolTipText" type="java.lang.String" editor="org.netbeans.beaninfo.editors.StringEditor" value="The Command to get the instance list"/>
+      </Properties>
+
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+      </AuxValues>
+      <Constraints>
+      </Constraints>
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.DesignGridLayout"/>
+    </Container>
+    <Container class="react.common.StandardName" name="AttributeList">
+      <Properties>
+        <Property name="name" type="java.lang.String" editor="org.netbeans.beaninfo.editors.StringEditor" value="AttributeList"/>
+        <Property name="toolTipText" type="java.lang.String" editor="org.netbeans.beaninfo.editors.StringEditor" value="Command to get attribute list"/>
+      </Properties>
+
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+      </AuxValues>
+      <Constraints>
+      </Constraints>
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.DesignGridLayout"/>
+    </Container>
+    <Container class="react.common.StandardName" name="InstanceAttributeList">
+      <Properties>
+        <Property name="name" type="java.lang.String" editor="org.netbeans.beaninfo.editors.StringEditor" value="InstanceAttributeList"/>
+        <Property name="toolTipText" type="java.lang.String" editor="org.netbeans.beaninfo.editors.StringEditor" value="Command to retrieve list of instance attributes (depends on instance selection)"/>
+      </Properties>
+      <Constraints>
+      </Constraints>
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.DesignGridLayout"/>
+    </Container>
+    <Container class="react.common.StandardName" name="calculateExpression">
+      <Constraints>
+      </Constraints>
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.DesignGridLayout"/>
+    </Container>
+    <Container class="react.common.StandardName" name="standardName2">
+      <Constraints>
+      </Constraints>
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.DesignGridLayout"/>
+    </Container>
+  </SubComponents>
+</Form>

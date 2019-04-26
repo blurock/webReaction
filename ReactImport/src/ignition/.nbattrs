@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE attributes PUBLIC "-//NetBeans//DTD DefaultAttributes 1.0//EN" "http://www.netbeans.org/dtds/attributes-1_0.dtd">
+<attributes version="1.0">
+    <fileobject name="ConditionMatrix.java">
+        <attr name="class_dependency_javax.swing.JPanel" stringvalue="ConditionMatrix"/>
+    </fileobject>
+    <fileobject name="ConditionPanel.java">
+        <attr name="class_dependency_javax.swing.JPanel" stringvalue="ConditionPanel"/>
+    </fileobject>
+    <fileobject name="DisplayNecessarySpecies.java">
+        <attr name="class_dependency_javax.swing.JFrame" stringvalue="DisplayNecessarySpecies"/>
+    </fileobject>
+    <fileobject name="FindMaxima.java">
+        <attr name="NetBeansAttrArguments" serialvalue="aced0005757200135b4c6a6176612e6c616e672e537472696e673badd256e7e91d7b47020000787000000004740008636f6e632e646174740007745b6d7365635d740003302e30740003312e30"/>
+    </fileobject>
+    <fileobject name="FindRanges.java">
+        <attr name="NetBeansAttrArguments" serialvalue="aced0005757200135b4c6a6176612e6c616e672e537472696e673badd256e7e91d7b47020000787000000003740008636f6e632e64617474000448324f32740007302e3030303031"/>
+    </fileobject>
+    <fileobject name="MaximumInRange.java">
+        <attr name="class_dependency_java.lang.Comparable" stringvalue="MaximumInRange"/>
+    </fileobject>
+    <fileobject name="POSMFrame.java">
+        <attr name="class_dependency_javax.swing.JFrame" stringvalue="POSMFrame"/>
+    </fileobject>
+    <fileobject name="PhasesPanel.java">
+        <attr name="class_dependency_javax.swing.JPanel" stringvalue="PhasesPanel"/>
+    </fileobject>
+    <fileobject name="SetOfConditions.java">
+        <attr name="class_dependency_java.util.Vector" stringvalue="SetOfConditions"/>
+    </fileobject>
+    <fileobject name="SetOfMaximaInRange.java">
+        <attr name="class_dependency_ignition.PointRange" stringvalue="SetOfMaximaInRange"/>
+    </fileobject>
+    <fileobject name="XMatrix.java">
+        <attr name="EA-OpenIDE-Connection" serialvalue="aced0005737200146a6176612e7574696c2e4c696e6b65644c6973740c29535d4a608822030000787077040000000078"/>
+        <attr name="class_dependency_utilities.ReadFileToString" stringvalue="XMatrix"/>
+    </fileobject>
+    <fileobject name="XandGNChooser.java">
+        <attr name="class_dependency_javax.swing.filechooser.FileFilter" stringvalue="XandGNChooser"/>
+    </fileobject>
+    <fileobject name="testFrame.java">
+        <attr name="class_dependency_javax.swing.JFrame" stringvalue="testFrame"/>
+    </fileobject>
+</attributes>

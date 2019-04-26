@@ -1,0 +1,21 @@
+% ----------------------------------------------------------
+%  Parameter classes for entire set of instances
+% ----------------------------------------------------------
+ObjectClasses:
+% -------------------------------------------------------------
+DataType: ParameterizedFunction    A New Parameterized Function
+SimpleParameterizedExpression  ParameterSet ExpressionTree Real
+%% -------------------------------------------------
+DataType: ActionRule    Expression Action
+ExpressionAction     ParameterSet Operation Real 
+                     SimpleParameterizedExpression ParameterSet
+%% -------------------------------------------------
+DataType: LogicDescription  A real function based predicate
+ContLogicDescription Continuous
+%% -------------------------------------------------
+DataType: DescriptionExpressions   A set of expressions
+ExpDescription ParameterSet Operation Logical ParameterSet ContLogicDescription Logical
+END
+ClassNamePairs:
+ParameterizedDescription      ExpDescription
+END

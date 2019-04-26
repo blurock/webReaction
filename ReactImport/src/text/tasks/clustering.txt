@@ -1,0 +1,5 @@
+Cobweb Clustering Algorithm
+
+The instances and the predicates over attributes of the
+instances are used to create a cluster hierarchy.
+

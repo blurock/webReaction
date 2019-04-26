@@ -1,0 +1,36 @@
+Numeric Operations on Instance Attributes
+
+Various numeric manipulations can be performed to, for example,
+examine the statistical distribution of the values or to compute new
+instance attributes, such as the derivatives,normalizations, or the
+'Critical Points' needed to form predicates,
+
+Matrix:
+
+The base information of the numeric analyses is a matrix of values.
+The columns of the matrix are the individual attributes and the rows
+of the matrix are the individual instances.  A matrix is formed by
+choosing which instances and which attributes (within those instances)
+should be used.
+
+Distribution:
+
+The basic distribution
+of points can be examined and even further used as the basis of
+the normalization of points.  Several flags are available for
+normalization:
+
+MeanOffSet:      The mean is used as the zero point
+AverageOffSet:   The average is used as the zero point
+NoScale:         No scaling is done
+ZeroPreserving:  The zeros are preserved (The positive and negative
+                 values are scales from zero).
+
+Critical Points:
+
+The heart of the creating fuzzy predicates automatically for numeric
+values is the critical points.  These are a set of points and 
+deviations from these points for each attribute.
+
+
+

@@ -1,0 +1,16 @@
+System Initialization
+=====================
+
+The Analysis system consists of
+'hard-coded' classes (data types) and
+'dynamic' classes.  With this frame
+certain 'standard' data types are
+built.
+
+The 'Initialize' Button performs
+the initialization on the selected
+data groups.
+
+All the appropriate initializations
+should be done before the analyses 
+begin.

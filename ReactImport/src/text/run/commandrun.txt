@@ -1,0 +1,28 @@
+Run a Command
+===============
+
+To manipulate the data or do 
+specific analyses, individual
+commands (with the current history
+and history level) are performed.
+With this frame system commands
+can be specified directly.
+
+Three levels of how the command will
+effect the history level are available:
+
+'Experiment'
+The current level is used, but no new 
+information is generated.  This is 
+basically a debugging mode.
+
+'Change'
+The current level of information is
+updated by the new command.
+
+'Operate'
+The operation is performed on the 
+current level and then, when finished,
+the new data is written to a new level
+(the history level is automatically
+updated).

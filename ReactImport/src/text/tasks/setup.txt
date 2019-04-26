@@ -1,0 +1,14 @@
+Initial Setup of Instance and Attributes
+
+An analysis is dependent on a set of instances
+( as set of objects with attribute parameters) and
+a set of attributes within these instances.  This menu
+set sets up the set of instances and attributes
+to be used for the analyses.
+
+Training Set: The set of instances to be used within
+    the analyses to 'train', i.e. learn from.
+Test Set:     The set of instances to be used to 
+    determine how successful the analyses will be
+    on future instances.
+

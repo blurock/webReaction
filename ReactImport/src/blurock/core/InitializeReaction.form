@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Form version="1.0" type="org.netbeans.modules.form.forminfo.JPanelFormInfo">
+  <SyntheticProperties>
+    <SyntheticProperty name="encoding" type="java.lang.String" value="UTF-8"/>
+  </SyntheticProperties>
+
+  <Layout class="org.netbeans.modules.form.compat2.layouts.DesignGridBagLayout"/>
+  <SubComponents>
+    <Component class="javax.swing.JButton" name="runInitialization">
+      <Properties>
+        <Property name="toolTipText" type="java.lang.String" editor="org.netbeans.beaninfo.editors.StringEditor" value="Run the initialization "/>
+        <Property name="text" type="java.lang.String" editor="org.netbeans.beaninfo.editors.StringEditor" value="Initialize"/>
+      </Properties>
+
+      <Events>
+        <EventHandler event="mouseClicked" handler="runInitializationMouseClicked"/>
+      </Events>
+      <Constraints>
+        <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout" value="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout$BorderConstraintsDescription">
+          <BorderConstraints direction="North"/>
+        </Constraint>
+        <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignGridBagLayout" value="org.netbeans.modules.form.compat2.layouts.DesignGridBagLayout$GridBagConstraintsDescription">
+          <GridBagConstraints anchor="10" fill="2" gridHeight="1" gridWidth="0" gridX="-1" gridY="-1" insetsBottom="0" insetsLeft="0" insetsRight="0" insetsTop="0" ipadX="0" ipadY="0" weightX="0.0" weightY="0.0"/>
+        </Constraint>
+      </Constraints>
+    </Component>
+    <Container class="javax.swing.JPanel" name="jPanel1">
+      <Constraints>
+        <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout" value="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout$BorderConstraintsDescription">
+          <BorderConstraints direction="Center"/>
+        </Constraint>
+        <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignGridBagLayout" value="org.netbeans.modules.form.compat2.layouts.DesignGridBagLayout$GridBagConstraintsDescription">
+          <GridBagConstraints anchor="10" fill="2" gridHeight="1" gridWidth="1" gridX="-1" gridY="-1" insetsBottom="0" insetsLeft="0" insetsRight="0" insetsTop="0" ipadX="0" ipadY="0" weightX="0.0" weightY="0.0"/>
+        </Constraint>
+      </Constraints>
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.DesignGridLayout">
+        <Property name="rows" type="int" value="7"/>
+        <Property name="columns" type="int" value="1"/>
+      </Layout>
+      <SubComponents>
+        <Component class="javax.swing.JRadioButton" name="basicInitial">
+          <Properties>
+            <Property name="toolTipText" type="java.lang.String" editor="org.netbeans.beaninfo.editors.StringEditor" value="Initialize whole REACTION"/>
+            <Property name="selected" type="boolean" editor="sun.beans.editors.BoolEditor" value="true"/>
+            <Property name="text" type="java.lang.String" editor="org.netbeans.beaninfo.editors.StringEditor" value="Basic Initialization"/>
+          </Properties>
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignGridLayout" value="org.netbeans.modules.form.compat2.layouts.DesignGridLayout$GridConstraintsDescription"/>
+          </Constraints>
+        </Component>
+        <Component class="javax.swing.JRadioButton" name="mechanismAlgorithm">
+          <Properties>
+            <Property name="toolTipText" type="java.lang.String" editor="org.netbeans.beaninfo.editors.StringEditor" value="Run mechanism algorithm"/>
+            <Property name="selected" type="boolean" editor="sun.beans.editors.BoolEditor" value="true"/>
+            <Property name="text" type="java.lang.String" editor="org.netbeans.beaninfo.editors.StringEditor" value="Mechanism Algorithm"/>
+          </Properties>
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignGridLayout" value="org.netbeans.modules.form.compat2.layouts.DesignGridLayout$GridConstraintsDescription"/>
+          </Constraints>
+        </Component>
+        <Component class="javax.swing.JRadioButton" name="moleculeInit">
+          <Properties>
+            <Property name="label" type="java.lang.String" editor="org.netbeans.beaninfo.editors.StringEditor" value="Molecule"/>
+            <Property name="selected" type="boolean" editor="sun.beans.editors.BoolEditor" value="true"/>
+          </Properties>
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignGridLayout" value="org.netbeans.modules.form.compat2.layouts.DesignGridLayout$GridConstraintsDescription"/>
+          </Constraints>
+        </Component>
+        <Component class="javax.swing.JRadioButton" name="chemkinInit">
+          <Properties>
+            <Property name="selected" type="boolean" editor="sun.beans.editors.BoolEditor" value="true"/>
+            <Property name="text" type="java.lang.String" editor="org.netbeans.beaninfo.editors.StringEditor" value="Chemkin"/>
+          </Properties>
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignGridLayout" value="org.netbeans.modules.form.compat2.layouts.DesignGridLayout$GridConstraintsDescription"/>
+          </Constraints>
+        </Component>
+        <Component class="javax.swing.JRadioButton" name="equilibriumInit">
+          <Properties>
+            <Property name="selected" type="boolean" editor="sun.beans.editors.BoolEditor" value="true"/>
+            <Property name="text" type="java.lang.String" editor="org.netbeans.beaninfo.editors.StringEditor" value="Equilibrium"/>
+          </Properties>
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignGridLayout" value="org.netbeans.modules.form.compat2.layouts.DesignGridLayout$GridConstraintsDescription"/>
+          </Constraints>
+        </Component>
+        <Component class="javax.swing.JRadioButton" name="reactionInit">
+          <Properties>
+            <Property name="selected" type="boolean" editor="sun.beans.editors.BoolEditor" value="true"/>
+            <Property name="text" type="java.lang.String" editor="org.netbeans.beaninfo.editors.StringEditor" value="Reaction"/>
+          </Properties>
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignGridLayout" value="org.netbeans.modules.form.compat2.layouts.DesignGridLayout$GridConstraintsDescription"/>
+          </Constraints>
+        </Component>
+        <Component class="javax.swing.JRadioButton" name="mechanismInit">
+          <Properties>
+            <Property name="selected" type="boolean" editor="sun.beans.editors.BoolEditor" value="true"/>
+            <Property name="text" type="java.lang.String" editor="org.netbeans.beaninfo.editors.StringEditor" value="Mechanism"/>
+          </Properties>
+
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+          </AuxValues>
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignGridLayout" value="org.netbeans.modules.form.compat2.layouts.DesignGridLayout$GridConstraintsDescription"/>
+          </Constraints>
+        </Component>
+      </SubComponents>
+    </Container>
+  </SubComponents>
+</Form>

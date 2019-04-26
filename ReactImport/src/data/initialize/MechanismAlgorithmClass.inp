@@ -1,0 +1,31 @@
+ObjectClasses:
+%% -------------------------------------------------
+DataType: RxnAlgorithmRun  Molecule Algorithms
+MechanismAlgorithmRun
+MechanismUtilities    Initial
+        Output    Initial#MechanismUtilities
+           Choices Initial#MechanismUtilities#Output
+             PrintOutMechanism    Initial#MechanismUtilities#Output#Choices        Print
+             GetGeneratedMechanism    Initial#MechanismUtilities#Output#Choices    InputGenerated
+        Fill      Initial#MechanismUtilities
+             Choices Initial#MechanismUtilities#Fill
+             FillMechanism            Initial#MechanismUtilities#Fill#Choices      FillMechanism
+END
+% ----------------------------------------------------------
+END
+%% -------------------------------------------------
+ClassNamePairs:
+PrintMechLaTeX                 AlgorithmSummary
+PrintMechStandardShort         AlgorithmSummary
+PrintMechStandardShortWithReverse         AlgorithmSummary
+PrintReversePrintMechStandard  AlgorithmSummary
+InputGenerated                 AlgorithmSummary
+FillMechanism                  AlgorithmSummary
+END
+%% -------------------------------------------------
+ObjectClasses:
+END
+%% -------------------------------------------------
+ClassNamePairs:
+END
+%% -------------------------------------------------

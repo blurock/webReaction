@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Form version="1.0" type="org.netbeans.modules.form.forminfo.JPanelFormInfo">
+  <AuxValues>
+    <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
+  </AuxValues>
+
+  <Layout class="org.netbeans.modules.form.compat2.layouts.DesignGridLayout">
+    <Property name="columns" type="int" value="2"/>
+    <Property name="rows" type="int" value="5"/>
+  </Layout>
+  <SubComponents>
+    <Component class="javax.swing.JButton" name="instShow">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Instances"/>
+      </Properties>
+      <Events>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="instShow"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="instUpdate">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Update"/>
+      </Properties>
+      <Events>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="instUpdate"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="attrShow">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Attributes"/>
+      </Properties>
+      <Events>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="attrShow"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="attrUpdate">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Update"/>
+      </Properties>
+      <Events>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="attrUpdate"/>
+      </Events>
+    </Component>
+  </SubComponents>
+</Form>

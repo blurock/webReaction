@@ -1,0 +1,34 @@
+Instance Set Specification
+==========================
+
+A fundamental part of machine learning from
+a set of examples is the specification of 
+which instances (examples) are to be used
+to 'train' the learning procedure and which
+instances will be used to 'test' how good 
+the result is.
+
+Update:
+   This button updates to the current full set
+   of instance names.
+
+The frame consists of three subframes, the
+total set of current instances, the instances
+selected to be training instances and those 
+selected to be test instances.
+
+There are two ways in which the sets can be
+determined.  
+
+The first is through 'Percentage'.
+A given percentage of the total set of (selected)
+instances can be isolated to be the training set
+and the rest will be part of the training set.
+Which percentage should be used is determined by
+the slider.
+
+The second is through 'Selected' instances.  The
+selected instances in the current set (the leftmost
+frame) are transfered to the training or or test sets
+as determined by the radio buttons, 'Train' or 'Test'.
+

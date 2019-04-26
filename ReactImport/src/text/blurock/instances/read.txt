@@ -1,0 +1,36 @@
+Read Data
+=========
+
+One of the standard ways to input new
+data types, attributes and instance attributes
+is through reading pre-prepared files.  These
+files have two sections, the first deals with
+the attributes of the entire run and the second
+deals with the attributes of the instances.
+
+Input consists of two files, the 'Class' file, 
+where the data types and the specification of 
+which parameters are to be read are given and the 
+'Attribute' file where the attributes and instances
+are actually read in.
+
+Within the class specification file, 
+there are two parts to the input.  First, there 
+are class (data type) specifications.  This is 
+where new dynamic data types are defined, i.e. the
+required 'extra' information that is needed to 
+complete their specification is given.  The second
+part is the specification of which parameters are
+going to be read in.  The parameter name and the
+data type of the parameter are specified.
+
+Within the attribute file, the actual parameter information
+(given in the order of the previous specification).
+The input of the run parameters is given first.  Then,
+for each instance, the name of the instance and the set 
+of parameters are specified.
+
+In the input frame, the two files are specified.  By 
+clicking on 'Class File' or 'Attribute File' the 
+file can be searched for in the directory system.
+Alternatively, the name can be given directly in the field.

@@ -1,0 +1,12 @@
+Substructures
+
+This interface is able to view the basic
+molecule data that is in the REACT system.
+By pressing 'Substructure' 2D structure of the
+molecule can be examined.
+
+Substructures are the key to the reaction
+patterns in mechanism generation.  If a 
+substructure within a reaction pattern is
+matched within a molecule, then this molecule
+can 'react' with the substructure.

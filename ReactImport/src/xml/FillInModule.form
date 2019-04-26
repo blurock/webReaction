@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Form version="1.0" type="org.netbeans.modules.form.forminfo.JPanelFormInfo">
+  <SyntheticProperties>
+    <SyntheticProperty name="encoding" type="java.lang.String" value="UTF-8"/>
+  </SyntheticProperties>
+
+  <Layout class="org.netbeans.modules.form.compat2.layouts.DesignGridBagLayout"/>
+  <SubComponents>
+    <Container class="javax.swing.JPanel" name="jPanel1">
+      <Properties>
+        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+          <Border info="org.netbeans.modules.form.compat2.border.TitledBorderInfo">
+            <TitledBorder title="Module Definition"/>
+          </Border>
+        </Property>
+      </Properties>
+      <Constraints>
+        <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignGridBagLayout" value="org.netbeans.modules.form.compat2.layouts.DesignGridBagLayout$GridBagConstraintsDescription">
+          <GridBagConstraints anchor="10" fill="2" gridHeight="1" gridWidth="0" gridX="-1" gridY="-1" insetsBottom="0" insetsLeft="0" insetsRight="0" insetsTop="0" ipadX="0" ipadY="0" weightX="0.0" weightY="0.0"/>
+        </Constraint>
+      </Constraints>
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.DesignGridLayout">
+        <Property name="columns" type="int" value="2"/>
+      </Layout>
+      <SubComponents>
+        <Component class="javax.swing.JLabel" name="jLabel1">
+          <Properties>
+            <Property name="text" type="java.lang.String" editor="org.netbeans.beaninfo.editors.StringEditor" value="Package"/>
+            <Property name="toolTipText" type="java.lang.String" editor="org.netbeans.beaninfo.editors.StringEditor" value="The package environment of the module"/>
+          </Properties>
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignGridLayout" value="org.netbeans.modules.form.compat2.layouts.DesignGridLayout$GridConstraintsDescription"/>
+          </Constraints>
+        </Component>
+        <Component class="javax.swing.JTextField" name="packageName">
+          <Properties>
+            <Property name="text" type="java.lang.String" editor="org.netbeans.beaninfo.editors.StringEditor" value="CoreObjects"/>
+          </Properties>
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignGridLayout" value="org.netbeans.modules.form.compat2.layouts.DesignGridLayout$GridConstraintsDescription"/>
+          </Constraints>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jLabel2">
+          <Properties>
+            <Property name="text" type="java.lang.String" editor="org.netbeans.beaninfo.editors.StringEditor" value="Module"/>
+            <Property name="toolTipText" type="java.lang.String" editor="org.netbeans.beaninfo.editors.StringEditor" value="The module to fill"/>
+          </Properties>
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignGridLayout" value="org.netbeans.modules.form.compat2.layouts.DesignGridLayout$GridConstraintsDescription"/>
+          </Constraints>
+        </Component>
+        <Component class="javax.swing.JTextField" name="moduleName">
+          <Properties>
+            <Property name="text" type="java.lang.String" editor="org.netbeans.beaninfo.editors.StringEditor" value="CoreDataObjects"/>
+          </Properties>
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignGridLayout" value="org.netbeans.modules.form.compat2.layouts.DesignGridLayout$GridConstraintsDescription"/>
+          </Constraints>
+        </Component>
+      </SubComponents>
+    </Container>
+    <Container class="javax.swing.JPanel" name="jPanel2">
+      <Properties>
+        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+          <Border info="org.netbeans.modules.form.compat2.border.TitledBorderInfo">
+            <TitledBorder title="Generation Operations"/>
+          </Border>
+        </Property>
+      </Properties>
+      <Constraints>
+        <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignGridBagLayout" value="org.netbeans.modules.form.compat2.layouts.DesignGridBagLayout$GridBagConstraintsDescription">
+          <GridBagConstraints anchor="10" fill="2" gridHeight="1" gridWidth="1" gridX="-1" gridY="-1" insetsBottom="0" insetsLeft="0" insetsRight="0" insetsTop="0" ipadX="0" ipadY="0" weightX="0.0" weightY="0.0"/>
+        </Constraint>
+      </Constraints>
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.DesignGridLayout">
+        <Property name="rows" type="int" value="5"/>
+        <Property name="columns" type="int" value="1"/>
+      </Layout>
+      <SubComponents>
+        <Component class="javax.swing.JButton" name="setupSetup">
+          <Properties>
+            <Property name="toolTipText" type="java.lang.String" editor="org.netbeans.beaninfo.editors.StringEditor" value="Produce the basis &apos;byhand&apos; source and include"/>
+            <Property name="label" type="java.lang.String" editor="org.netbeans.beaninfo.editors.StringEditor" value="Module Setup Script"/>
+            <Property name="text" type="java.lang.String" editor="org.netbeans.beaninfo.editors.StringEditor" value="Initial &apos;byhand&apos; Files"/>
+          </Properties>
+
+          <Events>
+            <EventHandler event="mouseClicked" handler="setupSetupMouseClicked"/>
+          </Events>
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignGridLayout" value="org.netbeans.modules.form.compat2.layouts.DesignGridLayout$GridConstraintsDescription"/>
+          </Constraints>
+        </Component>
+        <Component class="javax.swing.JButton" name="makedefSetup">
+          <Properties>
+            <Property name="toolTipText" type="java.lang.String" editor="org.netbeans.beaninfo.editors.StringEditor" value="Produce the module Makefile"/>
+            <Property name="label" type="java.lang.String" editor="org.netbeans.beaninfo.editors.StringEditor" value="Makefile"/>
+          </Properties>
+
+          <Events>
+            <EventHandler event="mouseClicked" handler="makedefSetupMouseClicked"/>
+          </Events>
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignGridLayout" value="org.netbeans.modules.form.compat2.layouts.DesignGridLayout$GridConstraintsDescription"/>
+          </Constraints>
+        </Component>
+        <Component class="javax.swing.JButton" name="includeSetup">
+          <Properties>
+            <Property name="toolTipText" type="java.lang.String" editor="org.netbeans.beaninfo.editors.StringEditor" value="Produce all the include files for all the classes"/>
+            <Property name="label" type="java.lang.String" editor="org.netbeans.beaninfo.editors.StringEditor" value="Includes"/>
+            <Property name="text" type="java.lang.String" editor="org.netbeans.beaninfo.editors.StringEditor" value="Include"/>
+          </Properties>
+
+          <Events>
+            <EventHandler event="mouseClicked" handler="includeSetupMouseClicked"/>
+          </Events>
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignGridLayout" value="org.netbeans.modules.form.compat2.layouts.DesignGridLayout$GridConstraintsDescription"/>
+          </Constraints>
+        </Component>
+        <Component class="javax.swing.JButton" name="sourceSetup">
+          <Properties>
+            <Property name="toolTipText" type="java.lang.String" editor="org.netbeans.beaninfo.editors.StringEditor" value="Produce all the source files for all the classes"/>
+            <Property name="label" type="java.lang.String" editor="org.netbeans.beaninfo.editors.StringEditor" value="Source"/>
+          </Properties>
+
+          <Events>
+            <EventHandler event="mouseClicked" handler="sourceSetupMouseClicked"/>
+          </Events>
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignGridLayout" value="org.netbeans.modules.form.compat2.layouts.DesignGridLayout$GridConstraintsDescription"/>
+          </Constraints>
+        </Component>
+        <Component class="javax.swing.JButton" name="exampleRun">
+          <Properties>
+            <Property name="toolTipText" type="java.lang.String" editor="org.netbeans.beaninfo.editors.StringEditor" value="Generate Basic Test Example"/>
+            <Property name="text" type="java.lang.String" editor="org.netbeans.beaninfo.editors.StringEditor" value="Example"/>
+          </Properties>
+
+          <Events>
+            <EventHandler event="mouseClicked" handler="exampleRunMouseClicked"/>
+          </Events>
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignGridLayout" value="org.netbeans.modules.form.compat2.layouts.DesignGridLayout$GridConstraintsDescription"/>
+          </Constraints>
+        </Component>
+      </SubComponents>
+    </Container>
+  </SubComponents>
+</Form>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE attributes PUBLIC "-//NetBeans//DTD DefaultAttributes 1.0//EN" "http://www.netbeans.org/dtds/attributes-1_0.dtd">
+<attributes version="1.0">
+    <fileobject name="DisplayFlow.java">
+        <attr name="class_dependency_javax.swing.JPanel" stringvalue="DisplayFlow"/>
+    </fileobject>
+    <fileobject name="FlowGraph.java">
+        <attr name="class_dependency_graph.DrawGraph" stringvalue="FlowGraph"/>
+        <attr name="class_dependency_java.awt.event.MouseListener" stringvalue="FlowGraph"/>
+    </fileobject>
+    <fileobject name="SingleFlowFile.java">
+        <attr name="class_dependency_utilities.ReadFileToString" stringvalue="SingleFlowFile"/>
+    </fileobject>
+</attributes>

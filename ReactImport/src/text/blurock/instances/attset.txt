@@ -1,0 +1,29 @@
+Selecting Instance Attributes
+=============================
+
+As analyses proceed, new parameters
+can be created or selected out, thus
+not all are needed for a particular new
+analyses.  With this frame, the set
+of attributes within each instance
+to be used for the next
+analyses is determined.
+
+The left frame is the current set of
+attributes within the instances and the
+right frame shows the selected attributes.
+
+There are two ways to select the instance
+attributes.  Either by selection or by
+type specification.  The 'Set Attributes'
+button performs the specified operation.
+
+With the 'Set Selected' radio
+button, those selected in the left frame
+are transfered to the selected set. 
+
+If only those of a certain type are to be used,
+then the data types are specified in the 
+'Attribute Types' field and the 'Set by
+Type' button is selected.
+

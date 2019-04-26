@@ -1,0 +1,24 @@
+The Class Hierarchy
+===================
+
+The 'classes' of the system are the 
+data types that are available.  Some 
+classes have 'dynamic' information, i.e.
+information that is specified at runtime
+(for optimal configurability).  Some standard
+data classes are specified during the initialization
+procedures.
+
+This menu shows the hierarchy of classes
+within the system.  
+
+By a click on a given name, the class 
+information (usually in plain text form) 
+will be given in a new frame.
+
+To see subclasses, click on the symbol to
+the left.
+
+Update:  With this button, the current set
+         of classes (as determined by the
+         history level) are read in.

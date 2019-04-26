@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Form version="1.0" type="org.netbeans.modules.form.forminfo.JPanelFormInfo">
+  <SyntheticProperties>
+    <SyntheticProperty name="encoding" type="java.lang.String" value="UTF-8"/>
+  </SyntheticProperties>
+
+  <Layout class="org.netbeans.modules.form.compat2.layouts.DesignGridBagLayout"/>
+  <SubComponents>
+    <Container class="javax.swing.JPanel" name="jPanel2">
+      <Properties>
+        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+          <Border info="org.netbeans.modules.form.compat2.border.TitledBorderInfo">
+            <TitledBorder title="Generated"/>
+          </Border>
+        </Property>
+      </Properties>
+      <Constraints>
+        <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignGridBagLayout" value="org.netbeans.modules.form.compat2.layouts.DesignGridBagLayout$GridBagConstraintsDescription">
+          <GridBagConstraints anchor="10" fill="2" gridHeight="1" gridWidth="0" gridX="-1" gridY="-1" insetsBottom="0" insetsLeft="0" insetsRight="0" insetsTop="0" ipadX="0" ipadY="0" weightX="0.0" weightY="0.0"/>
+        </Constraint>
+      </Constraints>
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.DesignGridLayout">
+        <Property name="rows" type="int" value="1"/>
+        <Property name="columns" type="int" value="2"/>
+      </Layout>
+      <SubComponents>
+        <Component class="javax.swing.JLabel" name="jLabel1">
+          <Properties>
+            <Property name="text" type="java.lang.String" editor="org.netbeans.beaninfo.editors.StringEditor" value="Root Name"/>
+          </Properties>
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignGridLayout" value="org.netbeans.modules.form.compat2.layouts.DesignGridLayout$GridConstraintsDescription"/>
+          </Constraints>
+        </Component>
+        <Component class="javax.swing.JTextField" name="jTextField3">
+          <Properties>
+            <Property name="toolTipText" type="java.lang.String" editor="org.netbeans.beaninfo.editors.StringEditor" value="The root name of the generated files"/>
+            <Property name="text" type="java.lang.String" editor="org.netbeans.beaninfo.editors.StringEditor" value="Test"/>
+          </Properties>
+
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_SerializeTo" type="java.lang.String" value="generatedRootName"/>
+          </AuxValues>
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignGridLayout" value="org.netbeans.modules.form.compat2.layouts.DesignGridLayout$GridConstraintsDescription"/>
+          </Constraints>
+        </Component>
+      </SubComponents>
+    </Container>
+    <Container class="javax.swing.JPanel" name="jPanel1">
+      <Properties>
+        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+          <Border info="org.netbeans.modules.form.compat2.border.TitledBorderInfo">
+            <TitledBorder title="Thermodynamics"/>
+          </Border>
+        </Property>
+      </Properties>
+      <Constraints>
+        <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignGridBagLayout" value="org.netbeans.modules.form.compat2.layouts.DesignGridBagLayout$GridBagConstraintsDescription">
+          <GridBagConstraints anchor="10" fill="2" gridHeight="1" gridWidth="0" gridX="-1" gridY="-1" insetsBottom="0" insetsLeft="0" insetsRight="0" insetsTop="0" ipadX="0" ipadY="0" weightX="0.0" weightY="0.0"/>
+        </Constraint>
+      </Constraints>
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.DesignGridLayout">
+        <Property name="rows" type="int" value="1"/>
+        <Property name="columns" type="int" value="4"/>
+      </Layout>
+      <SubComponents>
+        <Component class="javax.swing.JButton" name="thermoBaseFileButton">
+          <Properties>
+            <Property name="text" type="java.lang.String" editor="org.netbeans.beaninfo.editors.StringEditor" value="Base Thermo File"/>
+          </Properties>
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignGridLayout" value="org.netbeans.modules.form.compat2.layouts.DesignGridLayout$GridConstraintsDescription"/>
+          </Constraints>
+        </Component>
+        <Component class="javax.swing.JTextField" name="thermoBaseFileName">
+          <Properties>
+            <Property name="text" type="java.lang.String" editor="org.netbeans.beaninfo.editors.StringEditor" value="THERMDAT.base"/>
+          </Properties>
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignGridLayout" value="org.netbeans.modules.form.compat2.layouts.DesignGridLayout$GridConstraintsDescription"/>
+          </Constraints>
+        </Component>
+        <Component class="javax.swing.JRadioButton" name="useDefaultGenThermo">
+          <Properties>
+            <Property name="selected" type="boolean" editor="sun.beans.editors.BoolEditor" value="true"/>
+            <Property name="text" type="java.lang.String" editor="org.netbeans.beaninfo.editors.StringEditor" value="Use Default Generated"/>
+          </Properties>
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignGridLayout" value="org.netbeans.modules.form.compat2.layouts.DesignGridLayout$GridConstraintsDescription"/>
+          </Constraints>
+        </Component>
+        <Component class="javax.swing.JTextField" name="generatedThermo">
+          <Properties>
+            <Property name="text" type="java.lang.String" editor="org.netbeans.beaninfo.editors.StringEditor" value="Test.thm"/>
+          </Properties>
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignGridLayout" value="org.netbeans.modules.form.compat2.layouts.DesignGridLayout$GridConstraintsDescription"/>
+          </Constraints>
+        </Component>
+      </SubComponents>
+    </Container>
+    <Container class="javax.swing.JPanel" name="jPanel3">
+      <Properties>
+        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+          <Border info="org.netbeans.modules.form.compat2.border.TitledBorderInfo">
+            <TitledBorder title="Reactions"/>
+          </Border>
+        </Property>
+      </Properties>
+      <Constraints>
+        <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignGridBagLayout" value="org.netbeans.modules.form.compat2.layouts.DesignGridBagLayout$GridBagConstraintsDescription">
+          <GridBagConstraints anchor="10" fill="2" gridHeight="1" gridWidth="0" gridX="-1" gridY="-1" insetsBottom="0" insetsLeft="0" insetsRight="0" insetsTop="0" ipadX="0" ipadY="0" weightX="0.0" weightY="0.0"/>
+        </Constraint>
+      </Constraints>
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.DesignGridLayout">
+        <Property name="rows" type="int" value="1"/>
+        <Property name="columns" type="int" value="4"/>
+      </Layout>
+      <SubComponents>
+        <Component class="javax.swing.JButton" name="baseRxnButton">
+          <Properties>
+            <Property name="text" type="java.lang.String" editor="org.netbeans.beaninfo.editors.StringEditor" value="Base Mechanism"/>
+          </Properties>
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignGridLayout" value="org.netbeans.modules.form.compat2.layouts.DesignGridLayout$GridConstraintsDescription"/>
+          </Constraints>
+        </Component>
+        <Component class="javax.swing.JTextField" name="baseRxnsFileName">
+          <Properties>
+            <Property name="text" type="java.lang.String" editor="org.netbeans.beaninfo.editors.StringEditor" value="MECIN.base"/>
+          </Properties>
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignGridLayout" value="org.netbeans.modules.form.compat2.layouts.DesignGridLayout$GridConstraintsDescription"/>
+          </Constraints>
+        </Component>
+        <Component class="javax.swing.JRadioButton" name="useDefaultGenRxns">
+          <Properties>
+            <Property name="selected" type="boolean" editor="sun.beans.editors.BoolEditor" value="true"/>
+            <Property name="text" type="java.lang.String" editor="org.netbeans.beaninfo.editors.StringEditor" value="Use Default Generated"/>
+          </Properties>
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignGridLayout" value="org.netbeans.modules.form.compat2.layouts.DesignGridLayout$GridConstraintsDescription"/>
+          </Constraints>
+        </Component>
+        <Component class="javax.swing.JTextField" name="generatedRxns">
+          <Properties>
+            <Property name="text" type="java.lang.String" editor="org.netbeans.beaninfo.editors.StringEditor" value="Test.mech"/>
+          </Properties>
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignGridLayout" value="org.netbeans.modules.form.compat2.layouts.DesignGridLayout$GridConstraintsDescription"/>
+          </Constraints>
+        </Component>
+      </SubComponents>
+    </Container>
+    <Container class="javax.swing.JPanel" name="jPanel4">
+      <Properties>
+        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+          <Border info="org.netbeans.modules.form.compat2.border.TitledBorderInfo">
+            <TitledBorder title="Molecules"/>
+          </Border>
+        </Property>
+      </Properties>
+      <Constraints>
+        <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignGridBagLayout" value="org.netbeans.modules.form.compat2.layouts.DesignGridBagLayout$GridBagConstraintsDescription">
+          <GridBagConstraints anchor="10" fill="2" gridHeight="1" gridWidth="0" gridX="-1" gridY="-1" insetsBottom="0" insetsLeft="0" insetsRight="0" insetsTop="0" ipadX="0" ipadY="0" weightX="0.0" weightY="0.0"/>
+        </Constraint>
+      </Constraints>
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.DesignGridLayout">
+        <Property name="rows" type="int" value="1"/>
+        <Property name="columns" type="int" value="4"/>
+      </Layout>
+      <SubComponents>
+        <Component class="javax.swing.JButton" name="baseMolButton">
+          <Properties>
+            <Property name="text" type="java.lang.String" editor="org.netbeans.beaninfo.editors.StringEditor" value="Base Molecules"/>
+          </Properties>
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignGridLayout" value="org.netbeans.modules.form.compat2.layouts.DesignGridLayout$GridConstraintsDescription"/>
+          </Constraints>
+        </Component>
+        <Component class="javax.swing.JTextField" name="baseMoleculesFileName">
+          <Properties>
+            <Property name="text" type="java.lang.String" editor="org.netbeans.beaninfo.editors.StringEditor" value="SPECIES_LIST.base"/>
+          </Properties>
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignGridLayout" value="org.netbeans.modules.form.compat2.layouts.DesignGridLayout$GridConstraintsDescription"/>
+          </Constraints>
+        </Component>
+        <Component class="javax.swing.JRadioButton" name="useDefaultGenMols">
+          <Properties>
+            <Property name="selected" type="boolean" editor="sun.beans.editors.BoolEditor" value="true"/>
+            <Property name="text" type="java.lang.String" editor="org.netbeans.beaninfo.editors.StringEditor" value="Use Default Generated"/>
+          </Properties>
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignGridLayout" value="org.netbeans.modules.form.compat2.layouts.DesignGridLayout$GridConstraintsDescription"/>
+          </Constraints>
+        </Component>
+        <Component class="javax.swing.JTextField" name="generatedMolecules">
+          <Properties>
+            <Property name="text" type="java.lang.String" editor="org.netbeans.beaninfo.editors.StringEditor" value="Test.species"/>
+          </Properties>
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignGridLayout" value="org.netbeans.modules.form.compat2.layouts.DesignGridLayout$GridConstraintsDescription"/>
+          </Constraints>
+        </Component>
+      </SubComponents>
+    </Container>
+    <Container class="javax.swing.JPanel" name="jPanel5">
+      <Constraints>
+        <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignGridBagLayout" value="org.netbeans.modules.form.compat2.layouts.DesignGridBagLayout$GridBagConstraintsDescription">
+          <GridBagConstraints anchor="10" fill="0" gridHeight="1" gridWidth="1" gridX="-1" gridY="-1" insetsBottom="0" insetsLeft="0" insetsRight="0" insetsTop="0" ipadX="0" ipadY="0" weightX="0.0" weightY="0.0"/>
+        </Constraint>
+      </Constraints>
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.DesignGridLayout">
+        <Property name="rows" type="int" value="1"/>
+        <Property name="columns" type="int" value="2"/>
+      </Layout>
+      <SubComponents>
+        <Component class="javax.swing.JButton" name="runPreprocessor">
+          <Properties>
+            <Property name="text" type="java.lang.String" editor="org.netbeans.beaninfo.editors.StringEditor" value="Run Mechanism"/>
+          </Properties>
+
+          <Events>
+            <EventHandler event="mouseClicked" handler="runPreprocessorMouseClicked"/>
+          </Events>
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignFlowLayout" value="org.netbeans.modules.form.compat2.layouts.DesignFlowLayout$FlowConstraintsDescription"/>
+          </Constraints>
+        </Component>
+        <Component class="javax.swing.JButton" name="runMechanism">
+          <Properties>
+            <Property name="text" type="java.lang.String" editor="org.netbeans.beaninfo.editors.StringEditor" value="jButton6"/>
+          </Properties>
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignGridLayout" value="org.netbeans.modules.form.compat2.layouts.DesignGridLayout$GridConstraintsDescription"/>
+          </Constraints>
+        </Component>
+      </SubComponents>
+    </Container>
+  </SubComponents>
+</Form>

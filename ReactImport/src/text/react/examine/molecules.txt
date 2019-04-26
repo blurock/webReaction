@@ -1,0 +1,12 @@
+Molecule Database
+
+This interface is able to view the basic
+molecule data that is in the REACT system.
+By pressing 'Molecule' 2D structure of the
+molecule can be examined.
+
+The molecule database, as used for mechanism
+generation, is used to choose the initial molecules for 
+the generation and also to have know information about
+smaller molecules that could arise in the 
+generation process.

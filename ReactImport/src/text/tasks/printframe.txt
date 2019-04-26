@@ -1,0 +1,5 @@
+Examine Attribute, Instances and Classes
+
+Examine attributes, instances and classes at a
+given stage of analysis.
+

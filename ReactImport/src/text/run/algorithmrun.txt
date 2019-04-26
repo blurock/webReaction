@@ -1,0 +1,10 @@
+Run an Algorithm
+==================
+
+The more complex manipulations
+and analyses are packed into 
+'Algorithms'.  As prerequisites
+for algorithms are usually
+a set of attributes which are
+used as input to guide how the
+algorithm is to be performed.

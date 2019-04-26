@@ -1,0 +1,40 @@
+Fuzzy Logic Laboritorium Linz
+Johannes Kepler University, Linz
+A-4040 LINZ
+Austria
+
+
+
+  After 15 years of theoretical research in fuzzy logic, Prof. Erich
+  Peter Klement founded the FLLL with the intention of supporting the
+  local industry with knowledge in this rather new area. The history
+  can be summarized as follows:
+
+
+     1976: Start of research in fuzzy logic by Prof. Erich Peter Klement
+
+     September 1978: First international Linz Seminar on Fuzzy Set Theory
+
+     November 1991: Lab founded by Prof. Erich Peter Klement
+
+     January 1993: Move to the Softwarepark Hagenberg
+
+     August 1994: Beginning of permanent project business in Hagenberg
+
+     May 1995: Presentation of the Pilot and Demonstration Workplace Fuzzy Logic
+
+     June 1996: Launch of a long-term partnership with SONY DADC Austria and USP - Uni Software Plus
+
+
+  Out of that history and the intentions leading to the foundation of
+  the FLLL we can summarize our goals by the following key phrases:
+
+
+     Continuation of the basic research activities
+
+     Applied research for industries
+
+     Workshops for engineers, teachers, students, and companies
+
+     Consulting and management of industrial projects
+

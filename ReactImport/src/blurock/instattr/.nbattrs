@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE attributes PUBLIC "-//NetBeans//DTD DefaultAttributes 1.0//EN" "http://www.netbeans.org/dtds/attributes-1_0.dtd">
+<attributes version="1.0">
+    <fileobject name="ExamineInstanceAttributes.java">
+        <attr name="template" serialvalue="aced0005737200266f72672e6f70656e6964652e7574696c2e696f2e4e624d61727368616c6c65644f626a6563746cd5cc1aa397c0f2020002490004686173685b00086f626a42797465737400025b4278700000001170"/>
+    </fileobject>
+    <fileobject name="InstanceSets.java">
+        <attr name="template" serialvalue="aced0005737200266f72672e6f70656e6964652e7574696c2e696f2e4e624d61727368616c6c65644f626a6563746cd5cc1aa397c0f2020002490004686173685b00086f626a42797465737400025b4278700000001170"/>
+        <attr name="class_dependency_javax.swing.JPanel" stringvalue="InstanceSets"/>
+    </fileobject>
+    <fileobject name="GetSystemLists.java">
+        <attr name="class_dependency_java.lang.Object" stringvalue="GetSystemLists"/>
+    </fileobject>
+    <fileobject name="ManageAttributes.java">
+        <attr name="template" serialvalue="aced0005737200266f72672e6f70656e6964652e7574696c2e696f2e4e624d61727368616c6c65644f626a6563746cd5cc1aa397c0f2020002490004686173685b00086f626a42797465737400025b4278700000001170"/>
+        <attr name="class_dependency_javax.swing.JPanel" stringvalue="ManageAttributes"/>
+    </fileobject>
+    <fileobject name="ReadClassInstAttr.java">
+        <attr name="template" serialvalue="aced0005737200266f72672e6f70656e6964652e7574696c2e696f2e4e624d61727368616c6c65644f626a6563746cd5cc1aa397c0f2020002490004686173685b00086f626a42797465737400025b4278700000001170"/>
+    </fileobject>
+    <fileobject name="SelectInstanceAttributes.java">
+        <attr name="template" serialvalue="aced0005737200266f72672e6f70656e6964652e7574696c2e696f2e4e624d61727368616c6c65644f626a6563746cd5cc1aa397c0f2020002490004686173685b00086f626a42797465737400025b4278700000001170"/>
+        <attr name="class_dependency_javax.swing.JPanel" stringvalue="SelectInstanceAttributes"/>
+    </fileobject>
+    <fileobject name="GetInstanceAttributeParameter.java">
+        <attr name="template" serialvalue="aced0005737200266f72672e6f70656e6964652e7574696c2e696f2e4e624d61727368616c6c65644f626a6563746cd5cc1aa397c0f2020002490004686173685b00086f626a42797465737400025b4278700000001170"/>
+    </fileobject>
+    <fileobject name="GetAttributeParameter.java">
+        <attr name="template" serialvalue="aced0005737200266f72672e6f70656e6964652e7574696c2e696f2e4e624d61727368616c6c65644f626a6563746cd5cc1aa397c0f2020002490004686173685b00086f626a42797465737400025b4278700000001170"/>
+        <attr name="class_dependency_java.lang.Object" stringvalue="GetAttributeParameter"/>
+    </fileobject>
+    <fileobject name="GetObjectClass.java">
+        <attr name="template" serialvalue="aced0005737200266f72672e6f70656e6964652e7574696c2e696f2e4e624d61727368616c6c65644f626a6563746cd5cc1aa397c0f2020002490004686173685b00086f626a42797465737400025b4278700000001170"/>
+    </fileobject>
+</attributes>

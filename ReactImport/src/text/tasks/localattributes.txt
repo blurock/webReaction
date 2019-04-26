@@ -1,0 +1,8 @@
+Manipulation of Local Attributes
+
+Local Attributes are those within interface system.  The main purpose
+of the local values is to build and examine new classes and attributes
+with the graphical interface.
+
+Attributes can be transfered between the ANALYSIS++ system (at the
+specified stage of analysis) and the local attribute system.

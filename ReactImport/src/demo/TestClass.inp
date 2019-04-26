@@ -1,0 +1,40 @@
+% ----------------------------------------------------------
+%  Parameter classes for entire set of instances
+% ----------------------------------------------------------
+ObjectClasses:
+%% -------------------------------------------------
+DataType: NValued True-False Logic 
+TrueFalse True 1.0 False 0.0 END
+%% -------------------------------------------------
+DataType: NValued The basic steps in the production system
+Steps Start 0.0 GenerateNodes 0.25 ExpandNodes 0.50 Compute 0.75 Finish 1.0 END
+% -------------------------------------------------------------
+DataType: ParameterizedFunction    A New Parameterized Function
+SimpleParameterizedExpression  ParameterSet ExpressionTree Real
+% -------------------------------------------------------------
+DataType: ParameterizedFunction    A New Parameterized Function
+ConditionExpression  ParameterSet ExpressionTree Real
+% -------------------------------------------------------------
+DataType: ParameterizedFunction    A New Parameterized Function
+StandardExpression  ParameterSet ExpressionTree Real
+%% -------------------------------------------------
+DataType: ActionRule    Expression Action
+ExpressionAction     ParameterSet Operation Real 
+                     SimpleParameterizedExpression ParameterSet
+%% -------------------------------------------------
+DataType: ActionRule    Expression Action
+PredicateAction      ParameterSet Operation Continuous 
+                     ConditionExpression ParameterSet
+%% -------------------------------------------------
+DataType: ProductionSystem
+NormalProductionSystem ParameterSet ExpressionTree Real SetOfRules 
+%% -------------------------------------------------
+DataType: LogicDescription  A real function based predicate
+ContLogicDescription Continuous
+%% -------------------------------------------------
+DataType: DescriptionExpressions   A set of expressions
+ExpDescription ParameterSet Operation Logical ParameterSet ContLogicDescription Logical
+END
+ClassNamePairs:
+ProductionSystem        NormalProductionSystem
+END

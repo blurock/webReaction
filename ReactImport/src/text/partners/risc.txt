@@ -1,0 +1,28 @@
+Research Institute for Symbolic Computation
+Johannes Kepler University, Linz
+A-4020 LINZ
+Austria
+
+ RISC-Linz was established by the Austrian
+ Government in 1987 and is organizationally a part
+ of the Johannes Kepler University in Linz,
+ Austria. RISC-Linz is an independent unit but
+ operates in close contact with the departments of
+ Institute of Mathematics and of the Institute of
+ Computer Science.
+
+ RISC-Linz was founded by Prof. Bruno Buchberger;
+ its current chairman is Prof. Franz
+ Winkler. Research and teaching at the institute is
+ carried out by the faculty who provide the
+ scientific environment for the graduate
+ students. At present, about 70 people (full
+ professors, faculty, Ph.D. and diploma students)
+ are working at RISC-Linz in the frame of various
+ research and development projects.
+
+RISC-Linz is located in the Castle of Hagenberg, a medieval castle 25
+km from Linz in the beautiful landscape of the Mühlviertel. This site
+combines all the advantages of easy accessibility in the heart of
+Austria and the attraction of an ideal working atmosphere for
+researchers.

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE attributes PUBLIC "-//NetBeans//DTD DefaultAttributes 1.0//EN" "http://www.netbeans.org/dtds/attributes-1_0.dtd">
+<attributes version="1.0">
+    <fileobject name="SpeciesEquations.java">
+        <attr name="class_dependency_java.util.ArrayList" stringvalue="SpeciesEquations"/>
+    </fileobject>
+    <fileobject name="DoneReadingException.java">
+        <attr name="class_dependency_java.lang.Exception" stringvalue="DoneReadingException"/>
+    </fileobject>
+    <fileobject name="MecOutReactionSet.java">
+        <attr name="class_dependency_java.util.ArrayList" stringvalue="MecOutReactionSet"/>
+    </fileobject>
+    <fileobject name="SpeciesList.java">
+        <attr name="class_dependency_java.util.ArrayList" stringvalue="SpeciesList"/>
+    </fileobject>
+    <fileobject name="MecOutReaction.java">
+        <attr name="class_dependency_java.lang.Object" stringvalue="MecOutReaction"/>
+    </fileobject>
+    <fileobject name="SpecieEquation.java">
+        <attr name="class_dependency_java.lang.Object" stringvalue="SpecieEquation"/>
+    </fileobject>
+    <fileobject name="ReadMecOut.java">
+        <attr name="class_dependency_javax.swing.JPanel" stringvalue="ReadMecOut"/>
+    </fileobject>
+</attributes>

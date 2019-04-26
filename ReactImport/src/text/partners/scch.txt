@@ -1,0 +1,37 @@
+Software Competence Center Hagenberg
+A-4372 Hagenberg, Austria
+
+
+
+      
+ The Software Competence Center Hagenberg dedicates research to
+ the development of integrated interdisciplinary software
+ solutions. The Competence Center offers the unique opportunity
+ of intensive collaboration of researchers from the following
+ areas:
+
+      Software Technology (SWT) 
+      Database Technology (DBT) 
+      Symbolic Computation (SYM) 
+      Numeric Computation (NUM) 
+      Knowledge-Based Technology (KBT) 
+
+ Since the discipline of advanced research on software
+ represents a vast field, the Competence Center focuses efforts
+ on the following challenging research topics:
+
+      Web Engineering 
+            Enterprise Security 
+            Distributed Component Architectures 
+            Electronic Commerce Architectures 
+      Knowledge Acquisition 
+            Machine Learning 
+            Intelligent Information Retrieval 
+            Scientific Computing 
+      Advanced Mathematical Software Tools 
+      Integrated Simulation and Optimization 
+
+ The selected topics were carefully chosen with respect to
+ their relevance and their potential for synergies between the
+ five areas represented at the Software Competence Center
+ Hagenberg.

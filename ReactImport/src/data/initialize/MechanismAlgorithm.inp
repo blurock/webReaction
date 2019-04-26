@@ -1,0 +1,82 @@
+Algorithms  Setup
+Attributes:
+%% -------------------------------------------------
+%%   PrintMechLaTeX                 AlgorithmSummary
+%% -------------------------------------------------
+                                    % The name of the Algorithm
+Initial MechanismUtilities Output END      % The Algorithm Category
+PrintReverse LaTeX END              % The Algorithm Keywords
+Print  END                          % Algorithm Specification
+                                    % Algorithm Input Parameters
+PrintParameters   KeyWords
+SubMolecules      KeyWords
+END
+                                    % Algorithm Output Parameters
+END
+%% -------------------------------------------------
+%%   PrintMechStandardShort         AlgorithmSummary
+%% -------------------------------------------------
+                                    % The name of the Algorithm
+Initial MechanismUtilities Output END      % The Algorithm Category
+Standard ChemkinName END              % The Algorithm Keywords
+Print  END                          % Algorithm Specification
+                                    % Algorithm Input Parameters
+PrintParameters   KeyWords
+SubMolecules      KeyWords
+END
+                                    % Algorithm Output Parameters
+END
+%% -------------------------------------------------
+%%   PrintMechStandardShortWithReverse         AlgorithmSummary
+%% -------------------------------------------------
+                                    % The name of the Algorithm
+Initial MechanismUtilities Output END      % The Algorithm Category
+Standard ChemkinName PrintReverse END              % The Algorithm Keywords
+Print  END                          % Algorithm Specification
+                                    % Algorithm Input Parameters
+PrintParameters   KeyWords
+SubMolecules      KeyWords
+END
+                                    % Algorithm Output Parameters
+END
+%% -------------------------------------------------
+%%   PrintMechStandard              AlgorithmSummary
+%% -------------------------------------------------
+                                    % The name of the Algorithm
+Initial MechanismUtilities Output END      % The Algorithm Category
+Standard END              % The Algorithm Keywords
+Print  END                          % Algorithm Specification
+                                    % Algorithm Input Parameters
+PrintParameters   KeyWords
+SubMolecules      KeyWords
+END
+                                    % Algorithm Output Parameters
+END
+%% -------------------------------------------------
+%%   InputGenerated                 AlgorithmSummary
+%% -------------------------------------------------
+                                    % The name of the Algorithm
+Initial MechanismUtilities Output END      % The Algorithm Category
+ END                                % The Algorithm Keywords
+InputGenerated  END                          % Algorithm Specification
+                                    % Algorithm Input Parameters
+Generated   KeyWords
+END
+                                    % Algorithm Output Parameters
+END
+%% -------------------------------------------------
+%%   FillMechanism                  AlgorithmSummary
+%% -------------------------------------------------
+                                    % The name of the Algorithm
+Initial MechanismUtilities Fill END      % The Algorithm Category
+ END                                % The Algorithm Keywords
+FillMechanism  END                          % Algorithm Specification
+                                    % Algorithm Input Parameters
+Parameters   KeyWords
+END
+                                    % Algorithm Output Parameters
+END
+%% =================================================
+%%      The Instances
+%% =================================================
+END

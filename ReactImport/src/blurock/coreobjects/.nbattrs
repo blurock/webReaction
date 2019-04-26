@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE attributes PUBLIC "-//NetBeans//DTD DefaultAttributes 1.0//EN" "http://www.netbeans.org/dtds/attributes-1_0.dtd">
+<attributes version="1.0">
+    <fileobject name="BaseDataInteger.java">
+        <attr name="template" serialvalue="aced0005737200266f72672e6f70656e6964652e7574696c2e696f2e4e624d61727368616c6c65644f626a6563746cd5cc1aa397c0f2020002490004686173685b00086f626a42797465737400025b4278700000001170"/>
+    </fileobject>
+    <fileobject name="BaseDataKeyWords.java">
+        <attr name="class_dependency_java.lang.Object" stringvalue="BaseDataKeyWords"/>
+        <attr name="template" serialvalue="aced0005737200266f72672e6f70656e6964652e7574696c2e696f2e4e624d61727368616c6c65644f626a6563746cd5cc1aa397c0f2020002490004686173685b00086f626a42797465737400025b4278700000001170"/>
+    </fileobject>
+    <fileobject name="BaseDataNumeric.java">
+        <attr name="template" serialvalue="aced0005737200266f72672e6f70656e6964652e7574696c2e696f2e4e624d61727368616c6c65644f626a6563746cd5cc1aa397c0f2020002490004686173685b00086f626a42797465737400025b4278700000001170"/>
+    </fileobject>
+    <fileobject name="BaseDataReal.java">
+        <attr name="template" serialvalue="aced0005737200266f72672e6f70656e6964652e7574696c2e696f2e4e624d61727368616c6c65644f626a6563746cd5cc1aa397c0f2020002490004686173685b00086f626a42797465737400025b4278700000001170"/>
+    </fileobject>
+    <fileobject name="ClassNamePairs.java">
+        <attr name="class_dependency_java.lang.Object" stringvalue="ClassNamePairs"/>
+        <attr name="template" serialvalue="aced0005737200266f72672e6f70656e6964652e7574696c2e696f2e4e624d61727368616c6c65644f626a6563746cd5cc1aa397c0f2020002490004686173685b00086f626a42797465737400025b4278700000001170"/>
+    </fileobject>
+    <fileobject name="DBaseDataInteger.java">
+        <attr name="template" serialvalue="aced0005737200266f72672e6f70656e6964652e7574696c2e696f2e4e624d61727368616c6c65644f626a6563746cd5cc1aa397c0f2020002490004686173685b00086f626a42797465737400025b4278700000001170"/>
+    </fileobject>
+    <fileobject name="DBaseDataNumeric.java">
+        <attr name="template" serialvalue="aced0005737200266f72672e6f70656e6964652e7574696c2e696f2e4e624d61727368616c6c65644f626a6563746cd5cc1aa397c0f2020002490004686173685b00086f626a42797465737400025b4278700000001170"/>
+    </fileobject>
+    <fileobject name="DBaseDataReal.java">
+        <attr name="template" serialvalue="aced0005737200266f72672e6f70656e6964652e7574696c2e696f2e4e624d61727368616c6c65644f626a6563746cd5cc1aa397c0f2020002490004686173685b00086f626a42797465737400025b4278700000001170"/>
+    </fileobject>
+    <fileobject name="DataIntegerClass.java">
+        <attr name="template" serialvalue="aced0005737200266f72672e6f70656e6964652e7574696c2e696f2e4e624d61727368616c6c65644f626a6563746cd5cc1aa397c0f2020002490004686173685b00086f626a42797465737400025b4278700000001170"/>
+    </fileobject>
+    <fileobject name="DataNumericClass.java">
+        <attr name="template" serialvalue="aced0005737200266f72672e6f70656e6964652e7574696c2e696f2e4e624d61727368616c6c65644f626a6563746cd5cc1aa397c0f2020002490004686173685b00086f626a42797465737400025b4278700000001170"/>
+    </fileobject>
+    <fileobject name="DataRealClass.java">
+        <attr name="template" serialvalue="aced0005737200266f72672e6f70656e6964652e7574696c2e696f2e4e624d61727368616c6c65644f626a6563746cd5cc1aa397c0f2020002490004686173685b00086f626a42797465737400025b4278700000001170"/>
+    </fileobject>
+    <fileobject name="PanelNumeric.java">
+        <attr name="template" serialvalue="aced0005737200266f72672e6f70656e6964652e7574696c2e696f2e4e624d61727368616c6c65644f626a6563746cd5cc1aa397c0f2020002490004686173685b00086f626a42797465737400025b4278700000001170"/>
+    </fileobject>
+    <fileobject name="PanelSetOfObjects.java">
+        <attr name="class_dependency_javax.swing.JPanel" stringvalue="PanelSetOfObjects"/>
+        <attr name="template" serialvalue="aced0005737200266f72672e6f70656e6964652e7574696c2e696f2e4e624d61727368616c6c65644f626a6563746cd5cc1aa397c0f2020002490004686173685b00086f626a42797465737400025b4278700000001170"/>
+    </fileobject>
+    <fileobject name="RegisteredClasses.java">
+        <attr name="class_dependency_blurock.coreobjects.DataSetOfObjectsClass" stringvalue="RegisteredClasses"/>
+        <attr name="template" serialvalue="aced0005737200266f72672e6f70656e6964652e7574696c2e696f2e4e624d61727368616c6c65644f626a6563746cd5cc1aa397c0f2020002490004686173685b00086f626a42797465737400025b4278700000001170"/>
+    </fileobject>
+</attributes>

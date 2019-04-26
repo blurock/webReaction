@@ -1,0 +1,198 @@
+%%% ProductionSystem        NormalProductionSystem
+ProductionSystem:
+GeneratedNode: GeneratedNode
+NumberOfGoals: 5
+GoalResults:  
+             GeneratedNode 
+             END
+GoalCondition:
+                ParameterSet:
+                ClassNamePairs:
+                Stage               Steps
+                NumberOfMatches     Real
+                NodeCount           Real
+                PX                  Real
+                PWidth              Real
+                PTop                Real
+                PBottom             Real
+                END
+                %% Stage -------------------------------------------
+                Start
+                %% NumberOfMatches ---------------------------------
+                0.0  
+                %% NodeCount ---------------------------------------
+                1.0
+                %% X  -------------------------------------------------
+                0.0
+                %% Width -------------------------------------------------
+                1.0
+                %% Top -------------------------------------------------
+                1.0
+                %% Bottom -------------------------------------------------
+                0.0
+
+                Operation:
+                Ref     TrueFalse
+                END
+                False
+                ( EqualToZero ( - NodeCount NumberOfMatches ) )
+SetOfRules:
+ClassNamePairs:
+Start        PredicateAction
+ExpandRule   PredicateAction
+ComputeRule  PredicateAction
+END
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%    
+%%% Start   ExpressionAction
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%    
+ActionRule:
+                        ParameterSet: ClassNamePairs: END Operation:
+          ActionRuleCondition:
+                        ParameterSet: ClassNamePairs: END Operation:
+                Ref     TrueFalse
+                END
+                True
+                ( Start Stage )
+
+        CutOff: .75
+        ActionRuleSetOfActions:
+                ClassNamePairs:
+                Stage               StandardExpression
+                DescriptionGraph    StandardExpression
+                GraphMatches        StandardExpression
+                NodeProperties      StandardExpression
+                NodeCount           StandardExpression
+                END
+%%%%%%%%%%%%%%%%%%%%%%%%Action1: Set to next Stage
+                        ParameterSet:
+                        ClassNamePairs:
+                        END
+                        Operation:
+                        ExpandNodes     Steps
+                        END
+                        ExpandNodes
+                        ( AND ExpandNodes )
+%%%%%%%%%%%%%%%%%%%%%%%%Action2: Determine Graph Description
+                        ParameterSet:
+                        ClassNamePairs:
+                        ParameterizedDescription      ExpDescription
+                        END
+%% -------------------------------------------------
+%%    ParameterizedDescription     Description
+%% -------------------------------------------------
+        DescriptionExpressions:
+        ParameterSet:
+        ClassNamePairs:
+                X                  Real
+                Width              Real
+                Top                Real
+                Bottom             Real
+        END
+                %% X  -------------------------------------------------
+                3.0
+                %% Width -------------------------------------------------
+                1.0
+                %% Top -------------------------------------------------
+                0.0
+                %% Bottom -------------------------------------------------
+                0.0
+        Operation:
+        Post: NoPostOperation
+        BeginDescription:
+                ParameterSet:
+                ClassNamePairs:
+                GreaterThanX        StandardExpression
+                LessThanX           StandardExpression
+                EqualToX            StandardExpression
+                END
+                        ParameterSet: ClassNamePairs: END Operation:
+                        END
+                     ( ParPredicate ( Set Bottom Bottom Top    X             X            ( + X Width ) )  Type )
+                        ParameterSet: ClassNamePairs: END Operation:
+                        END
+                     ( ParPredicate ( Set Top Top Bottom       ( - X Width ) ( - X Width ) X )             Type )
+                        ParameterSet: ClassNamePairs: END Operation:
+                        END
+                     ( ParPredicate ( Set Bottom Top Bottom    ( - X Width ) X             ( + X Width ) ) Type )
+        EndDescription:
+                        Operation:
+                        END
+                        ( LDescription ( Substitute ( Set PX PWidth PTop PBottom ) ParameterizedDescription ) Graph )
+%%%%%%%%%%%%%%%%%%%%%%%%Action3: Determine Matching Nodes
+                        ParameterSet: ClassNamePairs: END Operation:
+                        END
+                        ( Match DescriptionGraph DescriptionGraph )
+%%%%%%%%%%%%%%%%%%%%%%%%Action4: Determine Graph Properties
+                        ParameterSet: ClassNamePairs: END Operation:
+                        END
+                        ( NodeCounts DescriptionGraph )
+%%%%%%%%%%%%%%%%%%%%%%%%Action5: Extract Node Counts
+                        ParameterSet: ClassNamePairs: END Operation:
+                        CountsNodes      Object
+                        END
+                        ( Extract CountsNodes NodeProperties )
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%    
+%%% ExpandRule   ExpressionAction
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%    
+ActionRule:
+          ParameterSet: ClassNamePairs: END Operation:
+          ActionRuleCondition:
+
+                ParameterSet: ClassNamePairs: END Operation:
+                Ref     TrueFalse
+                END
+                True
+                ( Expand Stage )
+
+        CutOff: .75
+        ActionRuleSetOfActions:
+                ClassNamePairs:
+                Stage               StandardExpression
+                GeneratedNodes      StandardExpression
+                END
+%%%%%%%%%%%%%%%%%%%%%%%%Action1: Set to next Stage
+                        ParameterSet: ClassNamePairs: END Operation:
+                        Compute     Steps
+                        END
+                        Compute
+                        ( AND Compute )
+%%%%%%%%%%%%%%%%%%%%%%%%Action2: Determine Neighbors of the two graphs
+                        ParameterSet: ClassNamePairs: END Operation:
+                        END
+                        ( Neighbors ( Set GraphMatches GraphMatches ) GeneratedNode )
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%    
+%%% ComputeRule   ExpressionAction
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%    
+ActionRule:
+                ParameterSet: ClassNamePairs: END Operation:
+          ActionRuleCondition:
+                ParameterSet: ClassNamePairs: END Operation:
+                END
+                ( Compute Stage )
+
+        CutOff: .75
+        ActionRuleSetOfActions:
+                ClassNamePairs:
+                Stage                StandardExpression
+                MatchProperties      StandardExpression
+                NumberOfMatches      StandardExpression
+                END
+%%%%%%%%%%%%%%%%%%%%%%%%Action1: Set to next Stage
+                        ParameterSet: ClassNamePairs: END Operation:
+                        Expand     Steps
+                        END
+                        ExpandNodes
+                        ( AND Expand )
+%%%%%%%%%%%%%%%%%%%%%%%%Action2: Determine Neighbors of the two graphs
+                        ParameterSet: ClassNamePairs: END Operation:
+                        END
+                        ( MatchProps GeneratedNode )
+%%%%%%%%%%%%%%%%%%%%%%%%Action2: Determine Neighbors of the two graphs
+                        ParameterSet: ClassNamePairs: END Operation:
+                        NumberOfMatches Object
+                        END
+                        ( Extract NumberOfMatches MatchProperties )
+%% =================================================
+%%      New Instance Values
+%% =================================================
+END

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE attributes PUBLIC "-//NetBeans//DTD DefaultAttributes 1.0//EN" "http://www.netbeans.org/dtds/attributes-1_0.dtd">
+<attributes version="1.0">
+    <fileobject name="PhaseBoundaryPanel.java">
+        <attr name="class_dependency_javax.swing.JPanel" stringvalue="PhaseBoundaryPanel"/>
+    </fileobject>
+    <fileobject name="TotalNecessityPanel.java">
+        <attr name="class_dependency_javax.swing.filechooser.FileFilter" stringvalue="TotalNecessityPanel.directoryPOSM"/>
+        <attr name="class_dependency_javax.swing.JPanel" stringvalue="TotalNecessityPanel"/>
+    </fileobject>
+    <fileobject name="AssignIntegerPhases.java">
+        <attr name="class_dependency_blurock.SeparateUnderCondition.AssignConditions" stringvalue="AssignIntegerPhases"/>
+    </fileobject>
+    <fileobject name="NecessarySpeciesPanel.java">
+        <attr name="class_dependency_javax.swing.filechooser.FileFilter" stringvalue="NecessarySpeciesPanel.directoryPOSM"/>
+        <attr name="class_dependency_javax.swing.JPanel" stringvalue="NecessarySpeciesPanel"/>
+    </fileobject>
+</attributes>

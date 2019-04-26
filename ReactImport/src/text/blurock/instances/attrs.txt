@@ -1,0 +1,21 @@
+Atribute Set
+=========
+Attributes are the parameters
+pertaining to the whole data set.
+They can be intermediate results of
+analyses or calculations, or they can
+be parameters which guide the how an
+algorithm is to behave.
+
+This frame is for viewing the current
+(as specified by the history level)
+set of attributes.
+
+Update:
+   The 'Update' button determines the current
+   set of attributes (as specified by the history).
+
+View:
+   The 'view' button prints the value of the (first)
+   highlighted parameter in another frame.
+

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE attributes PUBLIC "-//NetBeans//DTD DefaultAttributes 1.0//EN" "http://www.netbeans.org/dtds/attributes-1_0.dtd">
+<attributes version="1.0">
+    <fileobject name="BaseDataCobwebCluster.java">
+        <attr name="class_dependency_blurock.coreobjects.BaseDataObject" stringvalue="BaseDataCobwebCluster"/>
+    </fileobject>
+    <fileobject name="BaseDataCobwebClusterDescriptorPoint.java">
+        <attr name="class_dependency_blurock.coreobjects.BaseDataObject" stringvalue="BaseDataCobwebClusterDescriptorPoint"/>
+    </fileobject>
+    <fileobject name="BaseDataCobwebClusterNodeStats.java">
+        <attr name="class_dependency_blurock.coreobjects.BaseDataObject" stringvalue="BaseDataCobwebClusterNodeStats"/>
+    </fileobject>
+    <fileobject name="ClusterNodeDataSet.java">
+        <attr name="class_dependency_blurock.CobwebCluster.ClusterNodeData" stringvalue="ClusterNodeDataSet"/>
+    </fileobject>
+    <fileobject name="CobwebClusterMainPanel.java">
+        <attr name="class_dependency_javax.swing.JPanel" stringvalue="CobwebClusterMainPanel"/>
+    </fileobject>
+    <fileobject name="DBaseDataCobwebCluster.java">
+        <attr name="class_dependency_blurock.coreobjects.DBaseDataObject" stringvalue="DBaseDataCobwebCluster"/>
+    </fileobject>
+    <fileobject name="DBaseDataCobwebClusterDescriptorPoint.java">
+        <attr name="class_dependency_blurock.coreobjects.DBaseDataObject" stringvalue="DBaseDataCobwebClusterDescriptorPoint"/>
+    </fileobject>
+    <fileobject name="DBaseDataCobwebClusterNodeStats.java">
+        <attr name="class_dependency_blurock.coreobjects.DBaseDataObject" stringvalue="DBaseDataCobwebClusterNodeStats"/>
+    </fileobject>
+    <fileobject name="DataCobwebClusterClass.java">
+        <attr name="class_dependency_blurock.coreobjects.DataObjectClass" stringvalue="DataCobwebClusterClass"/>
+    </fileobject>
+    <fileobject name="DataCobwebClusterDescriptorPointClass.java">
+        <attr name="class_dependency_blurock.coreobjects.DataObjectClass" stringvalue="DataCobwebClusterDescriptorPointClass"/>
+    </fileobject>
+    <fileobject name="DataCobwebClusterNodeStatsClass.java">
+        <attr name="class_dependency_blurock.coreobjects.DataObjectClass" stringvalue="DataCobwebClusterNodeStatsClass"/>
+    </fileobject>
+    <fileobject name="DescriptionPointPanel.java">
+        <attr name="class_dependency_javax.swing.JPanel" stringvalue="DescriptionPointPanel"/>
+    </fileobject>
+    <fileobject name="DetermineRegionsFromTest.java">
+        <attr name="NetBeansAttrArguments" serialvalue="aced0005757200135b4c6a6176612e6c616e672e537472696e673badd256e7e91d7b4702000078700000000174000a61737369676e2e6f7574"/>
+    </fileobject>
+    <fileobject name="SetOfClusterSets.java">
+        <attr name="NetBeansAttrArguments" serialvalue="aced0005757200135b4c6a6176612e6c616e672e537472696e673badd256e7e91d7b4702000078700000000174000a61737369676e2e6f7574"/>
+    </fileobject>
+</attributes>

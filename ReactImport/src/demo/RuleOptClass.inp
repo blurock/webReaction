@@ -1,0 +1,63 @@
+% ----------------------------------------------------------
+%  Parameters for entire set of instances
+% ----------------------------------------------------------
+InstanceSet  ===================== A Set of Optimization Parameters ==========================
+Attributes:
+%% -------------------------------------------------
+% MaximumNumberOfIterations
+10
+%% -------------------------------------------------
+%% OptimizeCost PopulationCostFunction
+CostFunction:
+Genetic:
+%% Genetic Objects in GeneticSet
+GeneticParameters:
+P1  GeneticReal
+END
+P1 Distribution_P1
+Population: 50
+ActionRule:
+                ParameterSet:
+                ClassNamePairs:
+                P1   Real
+                Ref     Real
+                END
+                0.0 0.0
+                Operation:
+
+          ActionRuleCondition:
+
+                ParameterSet:
+                ClassNamePairs:
+                END
+                Operation:
+                Ref     Real
+                END
+                50.0
+                ( LessThanZero ( - Var3 Ref ) )
+        CutOff: .75
+        ActionRuleSetOfActions:
+                ClassNamePairs:
+                Diff    SimpleParameterizedExpression
+                Cost    SimpleParameterizedExpression
+                END
+%%%%%%%%%%%%%%%%%%%%%%%%Action1: NumericExpression
+                        ParameterSet:
+                        ClassNamePairs:
+                        END
+                        Operation:
+                          END
+        ( - P1 Var3 )
+%%%%%%%%%%%%%%%%%%%%%%%%Action1: NumericExpression
+                        ParameterSet:
+                        ClassNamePairs:
+                        END
+                        Operation:
+                          Big               Real
+                          END
+                          0.0
+ ( - Big ( * Diff Diff ) )
+%% =================================================
+%%      No  Instance Data
+%% =================================================
+END

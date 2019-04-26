@@ -1,0 +1,45 @@
+Save Level History
+==================
+
+As soon as a set of analyses are
+completed, the intermediate results
+can be 'saved' and used as the starting
+point for the next set of analyses.  For
+each operation performed, the newly created
+data can either be saved with the parameters
+of the current level or the whole 'current' set,
+with the new results can be saved in the next level.
+In addition, with many operations, a debug
+level can be specified (this is especially
+useful when inputting new data).
+
+'History Update'
+When set, each operation (more or less each
+operation 'click' of menus updates to a 
+new level.  Otherwise, the current level
+is kept.
+
+'Debug'
+This slider sets the level of debugging.
+To the left, no debug information is 
+outputted and to the right the maximum
+(there are 5 levels).
+
+'History Name'
+Different sets of analyses can be stored
+under different names.  What is to be
+considered the 'current' set is determined
+by the history name and the history level.
+
+'Slider'
+The slider shows the current history level.
+The level is automatically updated
+when appropriate.
+
+'Analysis' or 'Reaction'
+There are actually two subsystems, the
+'Analysis' system is for doing
+machine learning analyses and the
+'Reaction' system is for symbolic chemical
+applications.
+ 

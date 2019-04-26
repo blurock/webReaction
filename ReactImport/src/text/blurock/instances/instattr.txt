@@ -1,0 +1,20 @@
+View Instance Attributes
+========================
+
+This frame is for examining 
+selected attributes of selected 
+instances.
+
+'Update Instance List'
+The current set of instance names are shown.
+
+'Attributes for Selected Instance'
+The attributes for the (first)
+selected instance are determined and
+placed in the right frame.
+
+'View Attributes'
+All the selected attributes of all
+the selected instances are displayed
+in a new frame.  This involves 
+repeated calls to the main system.
