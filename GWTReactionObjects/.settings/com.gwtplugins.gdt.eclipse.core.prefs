@@ -1,0 +1,6 @@
+eclipse.preferences.version=1
+gwtMavenModuleName=info.esblurock.reaction.data.gwt.GWTReactionObjects
+gwtMavenModuleShortName=GWTReactionObjects
+lastWarOutDir=/Users/edwardblurock/Reaction/GWTReactionObjects/target/GWTReactionObjects-1.0-SNAPSHOT
+warSrcDir=src/main/webapp
+warSrcDirIsOutput=false
