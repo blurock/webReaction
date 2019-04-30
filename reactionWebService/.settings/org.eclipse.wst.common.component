@@ -12,6 +12,9 @@
         <dependent-module archiveName="reactionDataObjects-1.0.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/reactionDataObjects/reactionDataObjects">
             <dependency-type>uses</dependency-type>
         </dependent-module>
+        <dependent-module archiveName="GWTReactionObjects-1.0-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/GWTReactionObjects/GWTReactionObjects">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
         <property name="context-root" value="reactionWebService"/>
         <property name="java-output-path" value="/reactionWebService/build/classes"/>
     </wb-module>
