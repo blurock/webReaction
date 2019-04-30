@@ -46,12 +46,5 @@
 			<artifactId>GWTReactionObjects</artifactId>
 			<version>1.0-SNAPSHOT</version>
 		</dependency>
-		<!-- https://mvnrepository.com/artifact/org.apache.axis2/axis2 -->
-		<dependency>
-			<groupId>org.apache.axis2</groupId>
-			<artifactId>axis2</artifactId>
-			<version>1.7.9</version>
-			<type>pom</type>
-		</dependency>
 	</dependencies>
 </project>
