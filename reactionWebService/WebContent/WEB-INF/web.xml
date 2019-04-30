@@ -9,7 +9,7 @@
     <welcome-file>default.htm</welcome-file>
     <welcome-file>default.jsp</welcome-file>
   </welcome-file-list>
-  <servlet>
+  <!--  servlet>
     <display-name>Apache-Axis Servlet</display-name>
     <servlet-name>AxisServlet</servlet-name>
     <servlet-class>org.apache.axis.transport.http.AxisServlet</servlet-class>
@@ -25,8 +25,8 @@
   <servlet-mapping>
     <servlet-name>AxisServlet</servlet-name>
     <url-pattern>/services/*</url-pattern>
-  </servlet-mapping>
-  <servlet>
+  </servlet-mapping -->
+  <!--  servlet>
     <display-name>Axis Admin Servlet</display-name>
     <servlet-name>AdminServlet</servlet-name>
     <servlet-class>org.apache.axis.transport.http.AdminServlet</servlet-class>
@@ -35,7 +35,7 @@
   <servlet-mapping>
     <servlet-name>AdminServlet</servlet-name>
     <url-pattern>/servlet/AdminServlet</url-pattern>
-  </servlet-mapping>
+  </servlet-mapping -->
   <servlet>
     <description>JAX-RS Tools Generated - Do not modify</description>
     <servlet-name>JAX-RS Servlet</servlet-name>
